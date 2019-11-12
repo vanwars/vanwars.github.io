@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
         <div class="container">
             <!-- banner -->
             <header>
@@ -36,15 +37,19 @@
                 <h1 id="about">About</h1>
                 <section class="about">
                     <p>
-                        I am a professor of instruction in the Computer Science department
+                        I am a Professor of Instruction in the Department of Computer Science
                         at Northwestern University.
                     </p>
+
                 </section>
 
                 <h1 id="teaching">Teaching</h1>
                 <section class="teaching">
                     <h2>Northwestern</h2>
-                    <h3>CS 110: Intro to CS using Python</h3>
+                    <h3>
+                        <i class="fab fa-python"></i>
+                        CS 110: Intro to Computer Programming using Python
+                    </h3>
                     <ul>
                         <li>
                             <a href="https://eecs110.github.io/spring2019/">Spring 2019</a>
@@ -54,12 +59,22 @@
                         </li>
                     </ul>
 
-                    <h3>CS 130: Intro to the Web</h3>
+                    <h3>
+                        <i class="fas fa-globe"></i>
+                        CS 130: Intro to the Web
+                    </h3>
                     <ul>
                         <li>
                             <a href="https://eecs130.github.io/spring2019/">Spring 2019</a>
                         </li>
                     </ul>
+
+                    <h3>
+                        <!-- <i class="fas fa-mobile-alt"></i> -->
+                        <i class="fas fa-laptop-code"></i>
+                        CS 330: Intro to HCI
+                    </h3>
+                    <p>Course description</p>
 
 
                     <h2>Berkeley City College</h2>
@@ -67,8 +82,11 @@
 
                 <h1 id="projects">Projects</h1>
                 <section class="projects region">
-                    <section>1</section>
-                    <section>2</section>
+                    <section>
+                        TREE Lab
+                        <canvas id="canvas" />
+                    </section>
+                    <section>Local Ground</section>
                     <section>3</section>
                     <section>4</section>
                     <section>5</section>
@@ -77,9 +95,21 @@
                     <section>8</section>
                 </section>
 
-                <h1 id="publications">Publications</h1>
+                <h1 id="publications">Publications & Conferences</h1>
                 <section class="publications">
                     <ul>
+                        <li>Popular culture and the civic imagination: Case studies of creative social change.<br>
+                            Code for what?
+                        </li>
+                        <li>Journal of the Learning Sciences.
+                            Scripts and counterscripts in community-based data science:
+                            Participatory digital mapping and the pursuit of a third space.
+                        </li>
+                        <li>Dissertation</li>
+                        <li>Lanouette, K., & Van Wart, S. J. (2019).
+                            <a class="accent" href="https://ris.utwente.nl/ws/portalfiles/portal/129957345/CSCL_2019_Volume_2.pdf#page=39">Moving Between Experience, Data and Explanation: The Role of Participatory GIS Maps in Elementary Science Sensemaking.</a>
+                            In Computer Supported Collaborative Learning (CSCL) (pp. 553–556). Lyon.
+                        </li>
                         <li>
                             Lanouette, K. A., Van Wart, S. J., &amp; Parikh, T. S. (2016, June).
                             <a class="accent" href="http://tap2k.org/papers/ICLS2016.pdf">Supporting Elementary Students' Science Learning Through Data Modeling and Interactive Mapping in Local Spaces</a>.
@@ -103,7 +133,9 @@
                             Poster, International Conference of the Learning Sciences (ICLS), June 23-27, 2014, Boulder, Colorado
                         </li>
     					<li>
-    						Sarah Van Wart and Tapan S. Parikh, <a class="accent" href="http://tap2k.org/papers/vanwart-localground-geohci2013.pdf">Increasing Youth and Community Agency in GIS</a>, GeoHCI Workshop, April 27-28, 2013, Paris, France
+                            Van Wart, S., & Parikh, T. S. (2013).
+                            <a class="accent" href="http://tap2k.org/papers/vanwart-localground-geohci2013.pdf">Increasing Youth and Community Agency in GIS.</a>
+                            Paper Presented at the Geographic Human-Computer Interaction (GeoHCI) Workshop at SIGCHI, 1–3. April 27-28, Paris, France.
     					</li>
     					<li>
     						Koy, K., Van Wart, S., Galey, B., O'Connor, M., &amp; Kelly, M. (2011).
@@ -123,5 +155,6 @@
             </footer>
         </div>
         <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="tree.js"></script>
     </body>
 </html>

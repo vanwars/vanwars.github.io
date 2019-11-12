@@ -73,9 +73,30 @@ main {
     padding-right: 10vw;
     min-height: 65vh;
 }
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+    color: #777;
+    margin-bottom: 0.5em;
+}
+.fa-python, .fa-globe, .fa-mobile-alt, .fa-desktop,
+.fa-laptop-code {
+    /* color: teal; */
+    min-width: 1.1em;
+    text-align: center;
+    margin-right: 0.5em;
+}
+.fa-python {
+    font-weight: 100;
+}
 
 .logo {
-    /* margin-right: auto; */
+    margin: 1vh;
     text-transform: uppercase;
     font-weight: bold;
     border: dashed 1px #CCC;
@@ -85,6 +106,15 @@ main {
     line-height: 70px;
     text-align: center;
     border-radius: 35px;
+}
+.teaching ul, .teaching p {
+    padding-left: 3.5em;
+    margin-top: 0px;
+    margin-bottom: 3em;
+}
+.teaching li {
+    list-style-type: none;
+    line-height: 1.6em;
 }
 
 .region {
@@ -103,19 +133,24 @@ main {
     padding: 5px;
 
     border: dotted 1px #CCC;
-    width: 25%;
+    width: 50%;
     margin: 0px;
-    height: 150px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     background: white;
 }
-section ul {
+.region section canvas {
+    width: 100%;
+    height: 200px;
+    /* border: solid 1px #000; */
+}
+.publications ul {
     margin: 0px;
     padding: 0px;
 }
 
-section li {
+.publications li {
     line-height: 1.6em;
     list-style-type: none;
     margin-bottom: 1em;
