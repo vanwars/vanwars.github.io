@@ -1,43 +1,42 @@
 // source: https://curran.github.io/HTML5Examples/
 const canvas = document.getElementById("canvas");
-const c = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
 const trunkHeight = canvas.height / 4;
 let branchLengthRatio = 0.775;
 const branchingDepth = 8;
 let branchAngleDifference = -.5;
 
-const drawTree = (x1, y1, x2, y2, branchLength,
-        branchAngle, depth) => {
+const drawTree = (x1, y1, x2, y2, branchLength, branchAngle, depth) => {
     if (depth === 0)
         return;
 
-    c.beginPath();
-    c.lineWidth = 1; 
-    c.moveTo(x1, y1);
-    c.lineTo(x2, y2);
-    c.closePath();
-    c.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = 0.5;
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.closePath();
+    ctx.stroke();
 
     branchLength *= branchLengthRatio;
 
-    function branch(angle){
-        var branchX2 = x2 + branchLength * Math.cos(angle);
-        var branchY2 = y2 + branchLength * Math.sin(angle);
-        drawTree(
-            x2, y2, branchX2, branchY2, branchLength,
-            angle, depth - 1);
-    }
+    // right branch
+    branch(depth, x2, y2, branchLength, branchAngle + branchAngleDifference);
 
-    // Right branch
-    branch(branchAngle + branchAngleDifference);
+    // left branch
+    branch(depth, x2, y2, branchLength, branchAngle - branchAngleDifference);
+};
 
-    // Left branch
-    branch(branchAngle - branchAngleDifference);
+const branch = (depth, x, y, branchLength, angle) => {
+    const branchX = x + branchLength * Math.cos(angle);
+    const branchY = y + branchLength * Math.sin(angle);
+    drawTree(
+        x, y, branchX, branchY, branchLength,
+        angle, depth - 1);
 };
 
 const redrawTree = () => {
 
-  c.clearRect(0,0, canvas.width, canvas.height);
+  ctx.clearRect(0,0, canvas.width, canvas.height);
   const rect = canvas.getBoundingClientRect();
   const x = canvas.width / 2;
   const y1 = canvas.height;
