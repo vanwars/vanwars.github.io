@@ -50,8 +50,10 @@ const Tree = (id, opts) => {
 
     canvas.addEventListener("mousemove", e => {
         const rect = canvas.getBoundingClientRect();
+        const height = document.querySelector('#' + id).clientHeight;
         const y = e.clientY - rect.top;
-        branchAngleDifference = (y + (canvas.height / 4)) / (canvas.height * 1.5) * -1;
+        branchAngleDifference = -1 * (y / height * 0.8 + 0.2);
+        //console.log(y, height, branchAngleDifference);
         // const heightDelta = ((y - 100) / 60000);
         // console.log(heightDelta);
         // branchLengthRatio += heightDelta;
