@@ -6,8 +6,9 @@ const Tree = (id, opts) => {
     const ctx = canvas.getContext("2d");
     const trunkHeight = canvas.height / 4;
     let branchLengthRatio = 0.775;
-    const branchingDepth = 8;
-    let branchAngleDifference = -.5;
+    let branchingDepth = 10;
+    let alpha = 1;
+    let branchAngleDifference = -0.5;
 
     const drawTree = (x1, y1, x2, y2, branchLength, branchAngle, depth) => {
         if (depth === 0)
@@ -16,6 +17,11 @@ const Tree = (id, opts) => {
         ctx.beginPath();
         ctx.lineWidth = opts.lineWidth || 0.5;
         ctx.moveTo(x1, y1);
+        if (depth < 4) {
+            ctx.strokeStyle = 'rgba(60, 110, 113, ' + alpha + ')';
+        } else {
+            ctx.strokeStyle = 'black';
+        }
         ctx.lineTo(x2, y2);
         ctx.closePath();
         ctx.stroke();
@@ -53,6 +59,13 @@ const Tree = (id, opts) => {
         const height = document.querySelector('#' + id).clientHeight;
         const y = e.clientY - rect.top;
         branchAngleDifference = -1 * (y / height * 0.8 + 0.2);
+        alpha = Math.abs(1 - y / height);
+        //console.log(alpha);
+        if (branchAngleDifference >= -0.5) {
+            branchingDepth = 10;
+        } else {
+            branchingDepth = 10;
+        }
         //console.log(y, height, branchAngleDifference);
         // const heightDelta = ((y - 100) / 60000);
         // console.log(heightDelta);
