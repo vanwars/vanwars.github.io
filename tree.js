@@ -1,20 +1,16 @@
 // source: https://curran.github.io/HTML5Examples/
+const canvas = document.getElementById("canvas");
+const c = canvas.getContext("2d");
+const trunkHeight = canvas.height / 4;
+let branchLengthRatio = 0.775;
+const branchingDepth = 8;
+let branchAngleDifference = -.5;
 
-var canvas = document.getElementById("canvas");
-var c = canvas.getContext("2d");
+const drawTree = (x1, y1, x2, y2, branchLength,
+        branchAngle, depth) => {
+    if (depth === 0)
+        return;
 
-// var centerX = canvas.width / 2;
-
-var trunkHeight = canvas.height / 4;
-var branchLengthRatio = 0.78;
-var branchAngleDifference = 19.42;
-var branchingDepth = 8;
-
-function drawTree(x1, y1, x2, y2, branchLength,
-                  branchAngle, depth){
-  if(depth == 0)
-    return;
-  else{
     c.beginPath();
     c.moveTo(x1, y1);
     c.lineTo(x2, y2);
@@ -24,10 +20,11 @@ function drawTree(x1, y1, x2, y2, branchLength,
     branchLength *= branchLengthRatio;
 
     function branch(angle){
-      var branchX2 = x2 + branchLength * Math.cos(angle);
-      var branchY2 = y2 + branchLength * Math.sin(angle);
-      drawTree(x2, y2, branchX2, branchY2, branchLength,
-               angle, depth - 1);
+        var branchX2 = x2 + branchLength * Math.cos(angle);
+        var branchY2 = y2 + branchLength * Math.sin(angle);
+        drawTree(
+            x2, y2, branchX2, branchY2, branchLength,
+            angle, depth - 1);
     }
 
     // Right branch
@@ -35,35 +32,27 @@ function drawTree(x1, y1, x2, y2, branchLength,
 
     // Left branch
     branch(branchAngle - branchAngleDifference);
-  }
-}
+};
 
-function redrawTree(){
+const redrawTree = () => {
 
   c.clearRect(0,0, canvas.width, canvas.height);
-  var rect = canvas.getBoundingClientRect();
-  var x1 = rect.x;
-  var y1 = canvas.height;
-  var x2 = x1;
-  var y2 = canvas.height - trunkHeight;
-  drawTree(x1, y1, x2, y2, trunkHeight,
+  const rect = canvas.getBoundingClientRect();
+  const x = canvas.width / 2;
+  const y1 = canvas.height;
+  const y2 = canvas.height - trunkHeight;
+  drawTree(x, y1, x, y2, trunkHeight,
            - Math.PI / 2, branchingDepth);
-}
+};
 
-canvas.addEventListener("mousemove",function(e){
-    var rect = canvas.getBoundingClientRect();
-    // console.log(rect);
-    // console.log('top', rect.top, 'left', rect.left);
-    // console.log(e.x, e.y);
-    // branchLengthRatio = Math.min(e.x / 400, .85);
-    branchLengthRatio = 0.775;
-    branchAngleDifference = e.y / (canvas.height - rect.left) * .003 * Math.PI;
-    // branchAngleDifference = Math.min(branchAngleDifference, 19.7
-    // );
-    // branchAngleDifference = Math.max(branchAngleDifference, 18.5);
+canvas.addEventListener("mousemove", e => {
+    const rect = canvas.getBoundingClientRect();
+    const y = e.clientY - rect.top;
+    branchAngleDifference = (y + 70) / 300 * -1;
+    // const heightDelta = ((y - 100) / 60000);
+    // console.log(heightDelta);
+    // branchLengthRatio += heightDelta;
     redrawTree();
-    // console.log("branchLengthRatio = "+branchLengthRatio);
-    // console.log("branchAngleDifference = "+branchAngleDifference);
 });
 
 redrawTree();
