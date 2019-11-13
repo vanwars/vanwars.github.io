@@ -4,11 +4,11 @@ const Tree = (id, opts) => {
     opts = opts || {};
     const canvas = document.getElementById(id);
     const ctx = canvas.getContext("2d");
-    const trunkHeight = canvas.height / 4;
-    let branchLengthRatio = 0.775;
+    const trunkHeight = canvas.height / 6;
+    let branchLengthRatio = 0.873; //0.775;
     let branchingDepth = 10;
     let alpha = 1;
-    let branchAngleDifference = -0.5;
+    let branchAngleDifference = -0.35;
 
     const drawTree = (x1, y1, x2, y2, branchLength, branchAngle, depth) => {
         if (depth === 0)
@@ -17,7 +17,7 @@ const Tree = (id, opts) => {
         ctx.beginPath();
         ctx.lineWidth = opts.lineWidth || 0.5;
         ctx.moveTo(x1, y1);
-        if (depth < 4) {
+        if (depth < 3) {
             ctx.strokeStyle = 'rgba(60, 110, 113, ' + alpha + ')';
         } else {
             ctx.strokeStyle = 'black';
@@ -52,15 +52,22 @@ const Tree = (id, opts) => {
       const y2 = canvas.height - trunkHeight;
       drawTree(x, y1, x, y2, trunkHeight,
                - Math.PI / 2, branchingDepth);
+      // label:
+      ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha + ')';
+      ctx.font = "30px Arial";
+      ctx.textAlign = 'center';
+      ctx.fillText("TR EE", x, y1 - 10);
     };
 
     canvas.addEventListener("mousemove", e => {
         const rect = canvas.getBoundingClientRect();
         const height = document.querySelector('#' + id).clientHeight;
         const y = e.clientY - rect.top;
-        branchAngleDifference = -1 * (y / height * 0.8 + 0.2);
+        branchAngleDifference = -1 * (y / height * 0.8 + 0.35);
         alpha = Math.abs(1 - y / height);
-        //console.log(alpha);
+        branchLengthRatio = alpha * .18 + 0.7;
+        console.log('blr', branchLengthRatio);
+        console.log(branchAngleDifference);
         if (branchAngleDifference >= -0.5) {
             branchingDepth = 10;
         } else {
