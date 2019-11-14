@@ -101,21 +101,24 @@ const Tree = (id, opts) => {
         }
         updateTree(animationY);
     }
+    const init = () => {
+        // attach event handlers:
+        canvas.addEventListener("mousemove", updateTreeOnMousemove);
 
-    canvas.addEventListener("mousemove", updateTreeOnMousemove);
-
-    // invoke functions:
-    if (opts.animate) {
-        updateTree(document.querySelector('#' + id).clientHeight);
-    }
-    //redrawTree();
-    if (opts.animate) {
-        if (opts.delay) {
-            setTimeout(startAnimation, opts.delay);
-        } else {
+        // init animation if requested:
+        if (opts.animate) {
+            updateTree(document.querySelector('#' + id).clientHeight);
+            if (opts.delay) {
+                setTimeout(startAnimation, opts.delay);
+                return;
+            }
             startAnimation();
+        } else {
+            redrawTree();
         }
     }
+    init();
+
 };
 const tree1 = Tree('canvas', {
     animate: false
