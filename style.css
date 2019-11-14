@@ -23,13 +23,13 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 15vh auto auto 10vh;
     grid-template-areas:
-        "logo top"
+        "top top"
         "menu menu"
         "main main"
         "bottom bottom";
 }
 
-header, nav, footer, aside, main, #logo {
+header, nav, footer, aside, main {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -38,6 +38,10 @@ header, nav, footer, aside, main, #logo {
 }
 header {
    grid-area: top;
+   align-items: flex-end;
+}
+header h1 {
+    margin-bottom: 0px
 }
 nav {
    grid-area: menu;
@@ -96,8 +100,9 @@ h3 {
 }
 
 #logo {
-    grid-area: logo;
-    width: 100%;
+    /* grid-area: logo; */
+    /* width: 100%; */
+    width: 200px;
     height: 100%;
     /* border: dashed 1px #CCC; */
 
