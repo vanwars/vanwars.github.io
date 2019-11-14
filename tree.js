@@ -89,7 +89,7 @@ const Tree = (id, opts) => {
     };
     this.startAnimation = () => {
         animationY = document.querySelector('#' + id).clientHeight;
-        animation = setInterval(animate, 10);
+        animation = setInterval(animate, opts.speed || 10);
     };
 
     const animate = () => {
@@ -106,11 +106,15 @@ const Tree = (id, opts) => {
 
     // invoke functions:
     if (opts.animate) {
-        branchLengthRatio = 0;
+        updateTree(document.querySelector('#' + id).clientHeight);
     }
-    redrawTree();
+    //redrawTree();
     if (opts.animate) {
-        startAnimation();
+        if (opts.delay) {
+            setTimeout(startAnimation, opts.delay);
+        } else {
+            startAnimation();
+        }
     }
 };
 const tree1 = Tree('canvas', {
@@ -118,5 +122,7 @@ const tree1 = Tree('canvas', {
 });
 const tree2 = Tree('logo', {
     lineWidth: 2,
-    animate: true
+    animate: true,
+    speed: 10,
+    delay: 1000
 });
