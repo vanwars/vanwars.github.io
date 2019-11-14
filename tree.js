@@ -8,7 +8,9 @@ const Tree = (id, opts) => {
     let branchLengthRatio = 0.873; //0.775;
     let branchingDepth = 10;
     let alpha = 1;
+    let animationY = canvas.height;
     let branchAngleDifference = -0.35;
+    let animation = null;
 
     const drawTree = (x1, y1, x2, y2, branchLength, branchAngle, depth) => {
         if (depth === 0)
@@ -59,15 +61,21 @@ const Tree = (id, opts) => {
       ctx.fillText("TR EE", x, y1 - 10);
     };
 
-    canvas.addEventListener("mousemove", e => {
+    const updateTreeOnMousemove = (e) => {
         const rect = canvas.getBoundingClientRect();
         const height = document.querySelector('#' + id).clientHeight;
         const y = e.clientY - rect.top;
+        updateTree(y);
+    };
+
+    const updateTree = y => {
+        // console.log(y);
+        const height = document.querySelector('#' + id).clientHeight;
         branchAngleDifference = -1 * (y / height * 0.8 + 0.35);
         alpha = Math.abs(1 - y / height);
         branchLengthRatio = alpha * .18 + 0.7;
-        console.log('blr', branchLengthRatio);
-        console.log(branchAngleDifference);
+        // console.log('blr', branchLengthRatio);
+        // console.log(branchAngleDifference);
         if (branchAngleDifference >= -0.5) {
             branchingDepth = 10;
         } else {
@@ -78,11 +86,37 @@ const Tree = (id, opts) => {
         // console.log(heightDelta);
         // branchLengthRatio += heightDelta;
         redrawTree();
-    });
+    };
+    this.startAnimation = () => {
+        animationY = document.querySelector('#' + id).clientHeight;
+        animation = setInterval(animate, 10);
+    };
 
+    const animate = () => {
+        --animationY;
+        if (animationY <= 0) {
+            clearInterval(animation);
+            console.log('CLEARED');
+            return;
+        }
+        updateTree(animationY);
+    }
+
+    canvas.addEventListener("mousemove", updateTreeOnMousemove);
+
+    // invoke functions:
+    if (opts.animate) {
+        branchLengthRatio = 0;
+    }
     redrawTree();
+    if (opts.animate) {
+        startAnimation();
+    }
 };
-const tree1 = Tree('canvas');
+const tree1 = Tree('canvas', {
+    animate: false
+});
 const tree2 = Tree('logo', {
-    lineWidth: 2
+    lineWidth: 2,
+    animate: true
 });
