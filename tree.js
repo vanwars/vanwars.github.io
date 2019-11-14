@@ -19,8 +19,8 @@ const Tree = (id, opts) => {
         ctx.beginPath();
         ctx.lineWidth = opts.lineWidth || 0.5;
         ctx.moveTo(x1, y1);
-        if (depth < 3) {
-            ctx.strokeStyle = 'rgba(60, 110, 113, ' + alpha + ')';
+        if (depth < 2) {
+            ctx.strokeStyle = 'rgba(124, 143, 19, ' + alpha + ')';
         } else {
             ctx.strokeStyle = 'black';
         }
@@ -74,17 +74,11 @@ const Tree = (id, opts) => {
         branchAngleDifference = -1 * (y / height * 0.8 + 0.35);
         alpha = Math.abs(1 - y / height);
         branchLengthRatio = alpha * .18 + 0.7;
-        // console.log('blr', branchLengthRatio);
-        // console.log(branchAngleDifference);
         if (branchAngleDifference >= -0.5) {
             branchingDepth = 10;
         } else {
             branchingDepth = 10;
         }
-        //console.log(y, height, branchAngleDifference);
-        // const heightDelta = ((y - 100) / 60000);
-        // console.log(heightDelta);
-        // branchLengthRatio += heightDelta;
         redrawTree();
     };
     this.startAnimation = () => {
