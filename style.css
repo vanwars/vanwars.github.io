@@ -141,7 +141,7 @@ h3 {
     padding: 5px;
 
     border: dotted 1px #CCC;
-    width: 50%;
+    width: 33%;
     margin: 0px;
     height: 250px;
     justify-content: center;
@@ -190,6 +190,22 @@ main a:hover {
     font-weight: bold;
     background-image: url(https://localground.org/static/assets/background-13.png);
     background-size: cover;
+}
+
+.region section.api-tutor {
+    font-family: 'Roboto';
+    font-size: 40px;
+    background-image: -webkit-linear-gradient(top, #666, #111);
+}
+.region section.api-tutor a {
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.region section.api-tutor img {
+    align-self: center;
+    margin-right: 10px;
 }
 
 @media (max-width: 800px) {
