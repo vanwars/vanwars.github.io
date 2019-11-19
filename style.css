@@ -9,6 +9,21 @@ body, body * {
 }
 h1, h2, h3, h4 {
     font-family: 'Open Sans Condensed', sans-serif;
+    /* margin-bottom: 0px; */
+}
+main h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px #CCC;
+}
+main h2 {
+    font-size: 1.7em;
+}
+main h3 {
+    font-size: 1.4em;
 }
 .mobile {
     display: none;
@@ -156,6 +171,8 @@ h3 {
 .publications ul {
     margin: 0px;
     padding: 0px;
+    overflow-wrap: break-word;
+    max-width: 90vw;
 }
 
 .publications li {
