@@ -4,13 +4,19 @@ const Tree = (id, opts) => {
     opts = opts || {};
     const canvas = document.getElementById(id);
     const ctx = canvas.getContext("2d");
-    const trunkHeight = canvas.height / 6;
-    let branchLengthRatio = 0.873; //0.775;
-    let branchingDepth = 10;
-    let alpha = 1;
+
+    let isInteractive = true;
+    if (opts.isInteractive !== undefined) {
+        isInteractive = opts.isInteractive;
+    }
     let animationY = canvas.height;
+    let branchLengthRatio = 0.873; //0.775;
+    let branchingDepth = opts.branchingDepth || 10;
+    let trunkHeight = canvas.height / 6;
+    let alpha = 1;
     let branchAngleDifference = -0.35;
     let animation = null;
+    let fontSize = opts.fontSize || '30px'
 
     const drawTree = (x1, y1, x2, y2, branchLength, branchAngle, depth) => {
         if (depth === 0)
@@ -46,7 +52,6 @@ const Tree = (id, opts) => {
     };
 
     const redrawTree = () => {
-
       ctx.clearRect(0,0, canvas.width, canvas.height);
       const rect = canvas.getBoundingClientRect();
       const x = canvas.width / 2;
@@ -56,29 +61,30 @@ const Tree = (id, opts) => {
                - Math.PI / 2, branchingDepth);
       // label:
       ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha + ')';
-      ctx.font = "30px Arial";
+      ctx.font = fontSize + " Arial";
       ctx.textAlign = 'center';
       ctx.fillText("TR EE", x, y1 - 10);
     };
 
     const updateTreeOnMousemove = (e) => {
         const rect = canvas.getBoundingClientRect();
-        const height = document.querySelector('#' + id).clientHeight;
         const y = e.clientY - rect.top;
         updateTree(y);
     };
 
-    const updateTree = y => {
-        // console.log(y);
+    const setDimensions = () => {
         const height = document.querySelector('#' + id).clientHeight;
-        branchAngleDifference = -1 * (y / height * 0.8 + 0.35);
-        alpha = Math.abs(1 - y / height);
+        const width = document.querySelector('#' + id).clientWidth;
+        canvas.width = width;
+        canvas.height = height;
+        trunkHeight = canvas.height / 6;
+    }
+
+    const updateTree = y => {
+        setDimensions();
+        branchAngleDifference = -1 * (y / canvas.height * 0.8 + 0.35);
+        alpha = Math.abs(1 - y / canvas.height);
         branchLengthRatio = alpha * .18 + 0.7;
-        if (branchAngleDifference >= -0.5) {
-            branchingDepth = 10;
-        } else {
-            branchingDepth = 10;
-        }
         redrawTree();
     };
     this.startAnimation = () => {
@@ -97,7 +103,9 @@ const Tree = (id, opts) => {
     }
     const init = () => {
         // attach event handlers:
-        canvas.addEventListener("mousemove", updateTreeOnMousemove);
+        if (isInteractive) {
+            canvas.addEventListener("mousemove", updateTreeOnMousemove);
+        }
 
         // init animation if requested:
         if (opts.animate) {
@@ -108,18 +116,10 @@ const Tree = (id, opts) => {
             }
             startAnimation();
         } else {
+            setDimensions();
             redrawTree();
         }
     }
     init();
 
 };
-const tree1 = Tree('canvas', {
-    animate: false
-});
-const tree2 = Tree('logo', {
-    lineWidth: 2,
-    animate: true,
-    speed: 10,
-    delay: 1000
-});

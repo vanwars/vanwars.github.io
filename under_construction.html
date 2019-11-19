@@ -13,7 +13,6 @@
         <div class="container">
             <!-- banner -->
             <header>
-                <canvas id="logo" class="logo desktop"></canvas>
                 <h1 class="desktop">Sarah Van Wart | Northwestern University</h1>
                 <a class="menu-toggle mobile" href="#">
                     <i class="fas fa-bars"></i>
@@ -163,5 +162,14 @@
         </div>
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="tree.js"></script>
+        <script>
+            const icon = Tree('canvas', {
+                lineWidth: 1.5,
+                fontSize: '40px',
+                animate: true,
+                speed: 2,
+                delay: 1200
+            });
+        </script>
     </body>
 </html>
