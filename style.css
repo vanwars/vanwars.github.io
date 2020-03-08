@@ -168,6 +168,14 @@ h3 {
     height: 200px;
     /* border: solid 1px #000; */
 }
+.publications table td {
+    vertical-align: top;
+    border-bottom: dotted 1px #CCC;
+}
+.publications table td:first-child {
+    width: 80px;
+    font-weight: 600;
+}
 .publications ul {
     margin: 0px;
     padding: 0px;
