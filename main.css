@@ -11,6 +11,10 @@ body, body * {
           box-sizing: border-box;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 .mobile {
   display: none;
 }
@@ -396,14 +400,12 @@ main a:hover {
   margin-top: 30px;
   width: 250px;
   height: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
 }
 
 .teaching .image > div {
@@ -422,40 +424,47 @@ main a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.teaching .image > div img {
+.teaching .image > div img, .teaching .image > div span {
   width: 100%;
+}
+
+.teaching .image > div span {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.teaching .image > div .aquarium, .teaching .image > div .trampolines {
+  height: 175px;
+  width: 100%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
 }
 
 .teaching .image > div .aquarium {
   background-image: url(assets/images/image1.gif);
-  height: 250px;
-  width: 100%;
   background-size: 351px 191px;
-  background-position: -92px -26px;
-  background-clip: content-box;
-  background-repeat: no-repeat;
+  background-position: -92px -6px;
 }
 
 .teaching .image > div .trampolines {
   background-image: url(assets/images/trampolines.gif);
-  height: 250px;
-  width: 100%;
-  background-size: 295px 220px;
+  background-size: 320px 220px;
   background-position: -77px -13px;
-  background-clip: content-box;
-  background-repeat: no-repeat;
 }
 
 .teaching .details {
   margin-top: 30px;
+  padding-left: 30px;
   width: calc(100% - 250px);
 }
 
@@ -490,8 +499,30 @@ main a:hover {
   .poppies-bottom {
     margin-top: -80px;
   }
+  .teaching {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .teaching .details {
+    width: 100%;
+  }
+  .teaching .details ul {
+    margin-bottom: auto;
+  }
   .teaching .image {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+  .teaching .image > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .teaching .image > div .trampolines {
     width: 100%;
@@ -503,8 +534,7 @@ main a:hover {
     background-position: -11px -33px;
     background-size: 103% auto;
   }
-  .teaching .image > div img {
-    width: auto;
+  .teaching .image > div img, .teaching .image > div span {
     height: 100%;
   }
 }

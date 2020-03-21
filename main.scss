@@ -9,6 +9,8 @@ body, body * {
    box-sizing: border-box;
 }
 
+p { line-height: 1.5em;}
+
 .mobile {
     display: none;
 }
@@ -294,9 +296,9 @@ main a:hover {
         margin-top: 30px;
         width: 250px;
         height: 180px;
-        display: flex;
+        // display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: top;
 
         > div {
             border: solid 1px #ccc;
@@ -308,37 +310,42 @@ main a:hover {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
 
-            img {
+            img, span {
                 width: 100%;
+            }
+            span {
+                margin-top: 5px;
+                margin-bottom: 15px;
+                font-size: 0.9em;
+                text-align: center;
+            }
+            .aquarium, .trampolines {
+                height: 175px;
+                width: 100%;
+                background-clip: content-box;
+                background-repeat: no-repeat;
             }
 
             .aquarium {
                 background-image: url(assets/images/image1.gif);
-                height: 250px;
-                width: 100%;
                 background-size: 351px 191px;
-                background-position: -92px -26px;
-                background-clip: content-box;
-                background-repeat: no-repeat;
+                background-position: -92px -6px;
             }
 
             .trampolines {
                 background-image: url(assets/images/trampolines.gif);
-                height: 250px;
-                width: 100%;
-                background-size: 295px 220px;
+                background-size: 320px 220px;
                 background-position: -77px -13px;
-                background-clip: content-box;
-                background-repeat: no-repeat;
             }
         }
     }
 
     .details {
         margin-top: 30px;
+        padding-left: 30px;
         width: calc(100% - 250px);
     }
 }
@@ -373,9 +380,20 @@ main a:hover {
         margin-top: -80px; 
     }
     .teaching {
-        .image {
+        flex-direction: column-reverse;
+        .details {
             width: 100%;
+            ul {
+                margin-bottom: auto;
+            }
+        }
+        .image {
+            // margin-top: auto;
+            width: 100%;
+            display: flex;
+            height: auto;
             > div {
+                flex-direction: row;
                 .trampolines {
                     width: 100%;
                     background-size: cover;
@@ -386,8 +404,8 @@ main a:hover {
                     background-position: -11px -33px;
                     background-size: 103% auto;
                 }
-                img {
-                    width: auto;
+                img, span {
+                    // width: auto;
                     height: 100%;
                 }
             }
