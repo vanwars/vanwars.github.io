@@ -138,7 +138,7 @@ main h1 {
   border-bottom: solid 1px #000;
 }
 
-main h2, main h3, main h4 {
+main h2, main h4 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -152,8 +152,9 @@ main h2 {
 }
 
 main h3 {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: black;
 }
 
 main h4 {
@@ -386,6 +387,7 @@ main a:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 20px 0px 40px 0px;
 }
 
 .teaching p, .teaching h3 {
@@ -397,9 +399,10 @@ main a:hover {
 }
 
 .teaching .image {
-  margin-top: 30px;
   width: 250px;
-  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -411,7 +414,7 @@ main a:hover {
 .teaching .image > div {
   border: solid 1px #ccc;
   width: 100%;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 0px 20px 0px;
   border-radius: 5px;
   padding: 5px;
   background: #FFF;
@@ -424,9 +427,9 @@ main a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -443,7 +446,7 @@ main a:hover {
   text-align: center;
 }
 
-.teaching .image > div .aquarium, .teaching .image > div .trampolines {
+.teaching .image > div .aquarium, .teaching .image > div .trampolines, .teaching .image > div .web-graphic, .teaching .image > div .hci-graphic, .teaching .image > div .ethics-graphic {
   height: 175px;
   width: 100%;
   background-clip: content-box;
@@ -452,8 +455,8 @@ main a:hover {
 
 .teaching .image > div .aquarium {
   background-image: url(assets/images/image1.gif);
-  background-size: 351px 191px;
-  background-position: -92px -6px;
+  background-position: -100px -33px;
+  background-size: 200% auto;
 }
 
 .teaching .image > div .trampolines {
@@ -462,10 +465,55 @@ main a:hover {
   background-position: -77px -13px;
 }
 
+.teaching .image > div .web-graphic {
+  background-image: url(https://img.icons8.com/clouds/500/web-laptop.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 240px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .hci-graphic {
+  background-image: url(https://web.mit.edu/6.813/www/sp18/classes/06-user-centered-design/figures/06.png);
+  background-size: 100% auto;
+  background-position: center;
+  max-width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .ethics-graphic {
+  background-image: url(https://news.umich.edu/wp-content/uploads/2019/01/new-u-m-digital-studies-institute-explores-impact-of-technology-with-focus-on-identity-inequality-ethics-LEAD.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .teaching .details {
-  margin-top: 30px;
   padding-left: 30px;
   width: calc(100% - 250px);
+}
+
+.teaching .details .course-links {
+  background: #fff;
+  border: dotted 1px #CCC;
+  border-radius: 5px;
+}
+
+.teaching .details .course-links td, .teaching .details .course-links th {
+  margin: 0px;
+  padding: 1px 7px;
+}
+
+.teaching .details .course-links th {
+  text-align: left;
+  font-weight: 600;
 }
 
 @media (max-width: 1100px) {
@@ -513,6 +561,7 @@ main a:hover {
     margin-bottom: auto;
   }
   .teaching .image {
+    margin-top: 20px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -533,7 +582,7 @@ main a:hover {
   .teaching .image > div .aquarium {
     width: 100%;
     background-position: -11px -33px;
-    background-size: 103% auto;
+    background-size: 120% auto;
   }
   .teaching .image > div img, .teaching .image > div span {
     height: 100%;
@@ -541,8 +590,9 @@ main a:hover {
 }
 
 @media (max-width: 400px) {
-  .teaching .image {
-    display: none;
+  .teaching .image > div .aquarium {
+    background-position: -100px -33px;
+    background-size: 200% auto;
   }
 }
 
