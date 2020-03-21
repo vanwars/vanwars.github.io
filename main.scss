@@ -299,40 +299,54 @@ main a:hover {
         display: flex;
         justify-content: center;
         align-content: center;
+
+        > div {
+            border: solid 1px #ccc;
+            width: 100%;
+            margin: 0px 20px 20px 0px;
+            border-radius: 5px;
+            padding: 5px;
+            /* background: #FFF; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+
+            .aquarium {
+                background-image: url(assets/images/image1.gif);
+                height: 250px;
+                width: 100%;
+                background-size: 351px 191px;
+                background-position: -92px -26px;
+                background-clip: content-box;
+                background-repeat: no-repeat;
+            }
+
+            .trampolines {
+                background-image: url(assets/images/trampolines.gif);
+                height: 250px;
+                width: 100%;
+                background-size: 295px 220px;
+                background-position: -77px -13px;
+                background-clip: content-box;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .details {
+        margin-top: 30px;
+        width: calc(100% - 250px);
     }
 }
 
-.teaching .image > div {
-    border: solid 1px #ccc;
-    width: 100%;
-    margin: 0px 20px 20px 0px;
-    border-radius: 5px;
-    padding: 5px;
-    /* background: #FFF; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.teaching .image > div img {
-    width: 100%;
-}
 
-.aquarium {
-    background-image: url(assets/images/image1.gif);
-    height: 250px;
-    width: 100%;
-    background-size: 351px 191px;
-    background-position: -92px -26px;
-    background-clip: content-box;
-    background-repeat: no-repeat;
-}
-.teaching .details {
-    margin-top: 30px;
-    width: calc(100% - 250px);
-    /* border: solid 1px #ccc; */
-}
+
 @media (max-width: 1100px) {
     main {
         padding-left: 10vw;

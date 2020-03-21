@@ -436,7 +436,7 @@ main a:hover {
   width: 100%;
 }
 
-.aquarium {
+.teaching .image > div .aquarium {
   background-image: url(assets/images/image1.gif);
   height: 250px;
   width: 100%;
@@ -446,10 +446,19 @@ main a:hover {
   background-repeat: no-repeat;
 }
 
+.teaching .image > div .trampolines {
+  background-image: url(assets/images/trampolines.gif);
+  height: 250px;
+  width: 100%;
+  background-size: 295px 220px;
+  background-position: -77px -13px;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
 .teaching .details {
   margin-top: 30px;
   width: calc(100% - 250px);
-  /* border: solid 1px #ccc; */
 }
 
 @media (max-width: 1100px) {
