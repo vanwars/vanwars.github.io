@@ -329,7 +329,6 @@ main a:hover {
 }
 
 .region section a:hover {
-  /* background: rgba(255, 255, 255, 0.6); */
   color: #000;
 }
 
@@ -370,7 +369,6 @@ main a:hover {
 
 .venue {
   font-weight: 600;
-  /* color: #00857f; */
   color: #000;
 }
 
@@ -414,7 +412,7 @@ main a:hover {
   margin: 0px 20px 20px 0px;
   border-radius: 5px;
   padding: 5px;
-  /* background: #FFF; */
+  background: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +489,23 @@ main a:hover {
   }
   .poppies-bottom {
     margin-top: -80px;
+  }
+  .teaching .image {
+    width: 100%;
+  }
+  .teaching .image > div .trampolines {
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -33px;
+  }
+  .teaching .image > div .aquarium {
+    width: 100%;
+    background-position: -11px -33px;
+    background-size: 103% auto;
+  }
+  .teaching .image > div img {
+    width: auto;
+    height: 100%;
   }
 }
 
