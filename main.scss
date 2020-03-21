@@ -382,6 +382,7 @@ main a:hover {
     .teaching {
         flex-direction: column-reverse;
         .details {
+            padding-left: 0px;
             width: 100%;
             ul {
                 margin-bottom: auto;
@@ -410,8 +411,12 @@ main a:hover {
                 }
             }
         }
+    }  
+}
+@media (max-width: 400px) { 
+    .teaching {
+        .image { display: none; }
     }
-    
 }
 
 /* @media (max-width: 800px) {

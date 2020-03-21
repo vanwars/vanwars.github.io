@@ -506,6 +506,7 @@ main a:hover {
             flex-direction: column-reverse;
   }
   .teaching .details {
+    padding-left: 0px;
     width: 100%;
   }
   .teaching .details ul {
@@ -536,6 +537,12 @@ main a:hover {
   }
   .teaching .image > div img, .teaching .image > div span {
     height: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .teaching .image {
+    display: none;
   }
 }
 
