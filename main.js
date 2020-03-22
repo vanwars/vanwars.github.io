@@ -12,6 +12,8 @@ const attachEventHandlers = () => {
     for (elem of document.querySelectorAll('nav a')) {
         elem.onclick = scrollToAnchor;
     }
+
+    window.onscroll = stickyToggle;
 };
 
 const scrollToAnchor = (ev) => {
@@ -24,4 +26,18 @@ const scrollToAnchor = (ev) => {
     ev.preventDefault();
 }
 
+
+const nav = document.querySelector("nav");
+const main = document.querySelector("main");
+const sticky = nav.offsetTop;
+
+const stickyToggle = () => {
+    if (window.pageYOffset > sticky) {
+        nav.classList.add("sticky");
+        main.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+        main.classList.remove("sticky");
+    }
+};
 attachEventHandlers();
