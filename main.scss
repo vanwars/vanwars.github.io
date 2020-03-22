@@ -252,13 +252,6 @@ main a:hover {
     color: #000;
 }
 
-.region section.lg {
-    font-family: "Amatic SC";
-    font-size: 50px;
-    font-weight: bold;
-    background-image: url(https://localground.org/static/assets/background-13.png);
-    background-size: cover;
-}
 
 .region section.api-tutor {
     font-family: 'Roboto';
@@ -280,7 +273,7 @@ main a:hover {
     color: #000;
 }
 
-.teaching {
+.teaching, .project {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -301,16 +294,16 @@ main a:hover {
         align-items: top;
 
         > div {
-            border: solid 1px #ccc;
+            // border: solid 1px #ccc;
+            // padding: 5px;
+            // background: #FFF;
             width: 100%;
             margin: 0px 0px 20px 0px;
             border-radius: 5px;
-            padding: 5px;
-            background: #FFF;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
 
             img, span {
@@ -319,10 +312,13 @@ main a:hover {
             span {
                 margin-top: 5px;
                 margin-bottom: 15px;
-                font-size: 0.9em;
+                font-size: 0.8em;
+                font-weight: 600;
                 text-align: center;
             }
-            .aquarium, .trampolines, .web-graphic, .hci-graphic, .ethics-graphic {
+            .aquarium, .trampolines, .web-graphic, 
+            .hci-graphic, .ethics-graphic, .data-design, 
+            .web-design-graphic, .students, .lg {
                 height: 175px;
                 width: 100%;
                 background-clip: content-box;
@@ -364,6 +360,64 @@ main a:hover {
                 max-width: 250px;
                 align-self: center;
             }
+
+            .web-design-graphic {
+                background-image: url(https://1zaja5380s332hs2h2r9fce1-wpengine.netdna-ssl.com/kansas-city/wp-content/uploads/sites/2/2017/05/kansas-city-website-design-kansas-city-web-development-asset.png);
+                background-size: auto 100%;
+                background-position: center;
+                max-width: 350px;
+                align-self: center;
+            }
+
+            .students {
+                background-image: url(assets/images/students.png);
+                background-size: auto 100%;
+                background-position: center -20px;
+                max-width: 350px;
+                align-self: center;
+            }
+
+            .data-design {
+                background-image: url(assets/images/bikelane.jpg);
+                background-size: cover; //auto 100%;
+                background-position: center; // -20px;
+                max-width: 350px;
+                align-self: center;
+            }
+
+            .lg {
+                font-family: "Amatic SC";
+                font-size: 50px;
+                font-weight: bold;
+                background-image: url(https://localground.org/static/assets/background-13.png);
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                a, a:hover, a:active, a:visited {
+                    color: #222;
+                    text-decoration: none;
+                }
+            }
+            canvas {
+                width: 250px;
+                height: 170px;
+            }
+
+            .api-tutor {
+                font-family: 'Roboto';
+                font-size: 40px;
+                letter-spacing: -1px;
+                a, a:hover, a:active, a:visited {
+                    color: #222;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                img {
+                    width: 50px;
+                    vertical-align: sub;
+                }
+            }
         }
     }
 
@@ -373,17 +427,12 @@ main a:hover {
         .course-links {
             background: #fff;
             border: dotted 1px #CCC;
-            // margin-left: auto;
-            // margin-right: auto;
-            // border-collapse: collapse;
             border-radius: 5px;
             td, th {
                 margin: 0px;
                 padding: 1px 7px;
-                // border: dotted 1px #CCC;
             }
             th { 
-                // width: 60px;
                 text-align: left;
                 font-weight: 600; 
             }
@@ -435,6 +484,7 @@ main a:hover {
             display: flex;
             height: auto;
             > div {
+                justify-content: center;
                 flex-direction: row;
                 .trampolines {
                     width: 100%;

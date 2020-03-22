@@ -337,14 +337,6 @@ main a:hover {
   color: #000;
 }
 
-.region section.lg {
-  font-family: "Amatic SC";
-  font-size: 50px;
-  font-weight: bold;
-  background-image: url(https://localground.org/static/assets/background-13.png);
-  background-size: cover;
-}
-
 .region section.api-tutor {
   font-family: 'Roboto';
   font-size: 40px;
@@ -377,7 +369,7 @@ main a:hover {
   color: #000;
 }
 
-.teaching {
+.teaching, .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +382,7 @@ main a:hover {
   margin: 20px 0px 40px 0px;
 }
 
-.teaching p, .teaching h3 {
+.teaching p, .teaching h3, .project p, .project h3 {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -398,7 +390,7 @@ main a:hover {
       align-self: flex-start;
 }
 
-.teaching .image {
+.teaching .image, .project .image {
   width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,13 +403,10 @@ main a:hover {
           align-items: top;
 }
 
-.teaching .image > div {
-  border: solid 1px #ccc;
+.teaching .image > div, .project .image > div {
   width: 100%;
   margin: 0px 0px 20px 0px;
   border-radius: 5px;
-  padding: 5px;
-  background: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,45 +416,50 @@ main a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.teaching .image > div img, .teaching .image > div span {
+.teaching .image > div img, .teaching .image > div span, .project .image > div img, .project .image > div span {
   width: 100%;
 }
 
-.teaching .image > div span {
+.teaching .image > div span, .project .image > div span {
   margin-top: 5px;
   margin-bottom: 15px;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 600;
   text-align: center;
 }
 
-.teaching .image > div .aquarium, .teaching .image > div .trampolines, .teaching .image > div .web-graphic, .teaching .image > div .hci-graphic, .teaching .image > div .ethics-graphic {
+.teaching .image > div .aquarium, .teaching .image > div .trampolines, .teaching .image > div .web-graphic,
+.teaching .image > div .hci-graphic, .teaching .image > div .ethics-graphic, .teaching .image > div .data-design,
+.teaching .image > div .web-design-graphic, .teaching .image > div .students, .teaching .image > div .lg, .project .image > div .aquarium, .project .image > div .trampolines, .project .image > div .web-graphic,
+.project .image > div .hci-graphic, .project .image > div .ethics-graphic, .project .image > div .data-design,
+.project .image > div .web-design-graphic, .project .image > div .students, .project .image > div .lg {
   height: 175px;
   width: 100%;
   background-clip: content-box;
   background-repeat: no-repeat;
 }
 
-.teaching .image > div .aquarium {
+.teaching .image > div .aquarium, .project .image > div .aquarium {
   background-image: url(assets/images/image1.gif);
   background-position: -100px -33px;
   background-size: 200% auto;
 }
 
-.teaching .image > div .trampolines {
+.teaching .image > div .trampolines, .project .image > div .trampolines {
   background-image: url(assets/images/trampolines.gif);
   background-size: 320px 220px;
   background-position: -77px -13px;
 }
 
-.teaching .image > div .web-graphic {
+.teaching .image > div .web-graphic, .project .image > div .web-graphic {
   background-image: url(https://img.icons8.com/clouds/500/web-laptop.png);
   background-size: cover;
   background-position: center;
@@ -475,7 +469,7 @@ main a:hover {
       align-self: center;
 }
 
-.teaching .image > div .hci-graphic {
+.teaching .image > div .hci-graphic, .project .image > div .hci-graphic {
   background-image: url(https://web.mit.edu/6.813/www/sp18/classes/06-user-centered-design/figures/06.png);
   background-size: 100% auto;
   background-position: center;
@@ -485,7 +479,7 @@ main a:hover {
       align-self: center;
 }
 
-.teaching .image > div .ethics-graphic {
+.teaching .image > div .ethics-graphic, .project .image > div .ethics-graphic {
   background-image: url(https://news.umich.edu/wp-content/uploads/2019/01/new-u-m-digital-studies-institute-explores-impact-of-technology-with-focus-on-identity-inequality-ethics-LEAD.png);
   background-size: cover;
   background-position: center;
@@ -495,23 +489,97 @@ main a:hover {
       align-self: center;
 }
 
-.teaching .details {
+.teaching .image > div .web-design-graphic, .project .image > div .web-design-graphic {
+  background-image: url(https://1zaja5380s332hs2h2r9fce1-wpengine.netdna-ssl.com/kansas-city/wp-content/uploads/sites/2/2017/05/kansas-city-website-design-kansas-city-web-development-asset.png);
+  background-size: auto 100%;
+  background-position: center;
+  max-width: 350px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .students, .project .image > div .students {
+  background-image: url(assets/images/students.png);
+  background-size: auto 100%;
+  background-position: center -20px;
+  max-width: 350px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .data-design, .project .image > div .data-design {
+  background-image: url(assets/images/bikelane.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 350px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .lg, .project .image > div .lg {
+  font-family: "Amatic SC";
+  font-size: 50px;
+  font-weight: bold;
+  background-image: url(https://localground.org/static/assets/background-13.png);
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teaching .image > div .lg a, .teaching .image > div .lg a:hover, .teaching .image > div .lg a:active, .teaching .image > div .lg a:visited, .project .image > div .lg a, .project .image > div .lg a:hover, .project .image > div .lg a:active, .project .image > div .lg a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+.teaching .image > div canvas, .project .image > div canvas {
+  width: 250px;
+  height: 170px;
+}
+
+.teaching .image > div .api-tutor, .project .image > div .api-tutor {
+  font-family: 'Roboto';
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.teaching .image > div .api-tutor a, .teaching .image > div .api-tutor a:hover, .teaching .image > div .api-tutor a:active, .teaching .image > div .api-tutor a:visited, .project .image > div .api-tutor a, .project .image > div .api-tutor a:hover, .project .image > div .api-tutor a:active, .project .image > div .api-tutor a:visited {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.teaching .image > div .api-tutor img, .project .image > div .api-tutor img {
+  width: 50px;
+  vertical-align: sub;
+}
+
+.teaching .details, .project .details {
   padding-left: 30px;
   width: calc(100% - 250px);
 }
 
-.teaching .details .course-links {
+.teaching .details .course-links, .project .details .course-links {
   background: #fff;
   border: dotted 1px #CCC;
   border-radius: 5px;
 }
 
-.teaching .details .course-links td, .teaching .details .course-links th {
+.teaching .details .course-links td, .teaching .details .course-links th, .project .details .course-links td, .project .details .course-links th {
   margin: 0px;
   padding: 1px 7px;
 }
 
-.teaching .details .course-links th {
+.teaching .details .course-links th, .project .details .course-links th {
   text-align: left;
   font-weight: 600;
 }
@@ -569,6 +637,9 @@ main a:hover {
     height: auto;
   }
   .teaching .image > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
