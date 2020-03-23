@@ -2,6 +2,7 @@
 
 const Tree = (id, opts) => {
     opts = opts || {};
+    let lastY = 0;
     const canvas = document.getElementById(id);
     const ctx = canvas.getContext("2d");
 
@@ -53,7 +54,6 @@ const Tree = (id, opts) => {
 
     const redrawTree = () => {
       ctx.clearRect(0,0, canvas.width, canvas.height);
-      const rect = canvas.getBoundingClientRect();
       const x = canvas.width / 2;
       const y1 = canvas.height;
       const y2 = canvas.height - trunkHeight;
@@ -69,7 +69,12 @@ const Tree = (id, opts) => {
     const updateTreeOnMousemove = (e) => {
         const rect = canvas.getBoundingClientRect();
         const y = e.clientY - rect.top;
-        updateTree(y);
+        
+        if (y != lastY && Math.abs(y - lastY) > 4) {
+            //console.log(y);
+            updateTree(y);
+            lastY = y;
+        }
     };
 
     const setDimensions = () => {

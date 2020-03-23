@@ -19,18 +19,12 @@ p {
   display: none;
 }
 
-main.sticky {
-  margin-top: 90px;
+.home {
+  display: none;
 }
 
-nav.sticky {
-  background: #FFFFF7;
-  border-bottom: solid 1px #DDD;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  -webkit-box-shadow: 0 0.125rem 0.45rem rgba(0, 0, 0, 0.075) !important;
-          box-shadow: 0 0.125rem 0.45rem rgba(0, 0, 0, 0.075) !important;
+main.sticky {
+  margin-top: 90px;
 }
 
 .container {
@@ -78,6 +72,21 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: menu;
+}
+
+nav .poppies {
+  display: none;
+}
+
+nav.sticky {
+  background: #FFFFF7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav.sticky .home {
+  display: inline;
 }
 
 nav ul {
@@ -628,23 +637,26 @@ main a:hover {
     -webkit-transform: rotate(-41deg);
             transform: rotate(-41deg);
   }
+  .poppies-bottom-left {
+    margin-top: -80px;
+  }
   .poppies-bottom {
     margin-top: -80px;
   }
-  .teaching {
+  .teaching, .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .teaching .details {
+  .teaching .details, .project .details {
     padding-left: 0px;
     width: 100%;
   }
-  .teaching .details ul {
+  .teaching .details ul, .project .details ul {
     margin-bottom: auto;
   }
-  .teaching .image {
+  .teaching .image, .project .image {
     margin-top: 20px;
     width: 100%;
     display: -webkit-box;
@@ -652,7 +664,7 @@ main a:hover {
     display: flex;
     height: auto;
   }
-  .teaching .image > div {
+  .teaching .image > div, .project .image > div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -661,17 +673,17 @@ main a:hover {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .teaching .image > div .trampolines {
+  .teaching .image > div .trampolines, .project .image > div .trampolines {
     width: 100%;
     background-size: cover;
     background-position: 0px -33px;
   }
-  .teaching .image > div .aquarium {
+  .teaching .image > div .aquarium, .project .image > div .aquarium {
     width: 100%;
     background-position: -11px -33px;
     background-size: 120% auto;
   }
-  .teaching .image > div img, .teaching .image > div span {
+  .teaching .image > div img, .teaching .image > div span, .project .image > div img, .project .image > div span {
     height: 100%;
   }
 }
