@@ -55,6 +55,7 @@ nav {
         display: none;
     }
     &.sticky {
+        height: 70px;
         background: #FFFFF7;
         position: fixed;
         top: 0;
@@ -63,8 +64,8 @@ nav {
         //     // color: white;
         //     font-weight: 600;
         // }
-        .home {
-            display: inline;
+        li.home, li {
+            display: flex;
         }
         // .poppies {
         //     display: block;

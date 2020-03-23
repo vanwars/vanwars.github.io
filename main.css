@@ -79,14 +79,17 @@ nav .poppies {
 }
 
 nav.sticky {
+  height: 70px;
   background: #FFFFF7;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-nav.sticky .home {
-  display: inline;
+nav.sticky li.home, nav.sticky li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav ul {
