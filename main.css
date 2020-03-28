@@ -443,8 +443,8 @@ main a:hover {
 }
 
 .teaching .image > div .ethics-graphic, .project .image > div .ethics-graphic {
-  background-image: url(https://news.umich.edu/wp-content/uploads/2019/01/new-u-m-digital-studies-institute-explores-impact-of-technology-with-focus-on-identity-inequality-ethics-LEAD.png);
-  background-size: cover;
+  background-image: url(assets/images/ethics.png);
+  background-size: 190px;
   background-position: center;
   max-width: 250px;
   -ms-flex-item-align: center;
