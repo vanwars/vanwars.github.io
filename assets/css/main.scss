@@ -268,8 +268,16 @@ main a:hover {
     }
 
     .image {
-        height: 175px;
-        border: solid 1px #000;
+        min-height: 175px;
+        border: solid 1px #EEE;
+        border-radius: 4px;
+        background:
+            radial-gradient(#EEE 15%, transparent 16%) 0 0,
+            radial-gradient(#EEE 15%, transparent 16%) 4px 4px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 5px;
+            background-color:#FFFFF7;
+            background-size:8px 8px;
         width: 250px;
         display: flex;
         justify-content: center;
@@ -464,7 +472,8 @@ main a:hover {
             }
         }
         .image {
-            border: solid 1px #000;
+            min-height: auto;
+            // border: solid 1px #000;
             margin-top: 20px;
             width: 100%;
             display: flex;
