@@ -488,7 +488,7 @@ main a:hover {
   font-family: "Amatic SC";
   font-size: 50px;
   font-weight: bold;
-  background-image: url(https://localground.org/static/../background-13.png);
+  background-image: url(https://localground.org/static/assets/background-13.png);
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

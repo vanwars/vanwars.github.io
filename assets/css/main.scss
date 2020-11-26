@@ -151,7 +151,7 @@ h1 {
 
 
 .poppies {
-    background-image: url('assets/images/poppies1.png');
+    background-image: url('../images/poppies1.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +165,7 @@ h1 {
  }
 
 .poppies-bottom {
-    background-image: url('assets/images/poppies1.png');
+    background-image: url('../images/poppies1.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +177,7 @@ h1 {
     transform: rotate(-41deg);
 }
 .poppies-bottom-left {
-    background-image: url('assets/images/california-poppy.png');
+    background-image: url('../images/california-poppy.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,17 +268,19 @@ main a:hover {
     }
 
     .image {
+        height: 175px;
+        border: solid 1px #000;
         width: 250px;
         display: flex;
         justify-content: center;
-        align-items: top;
+        align-items: center;
 
         > div {
             // border: solid 1px #ccc;
             // padding: 5px;
             // background: #FFF;
             width: 100%;
-            margin: 0px 0px 20px 0px;
+            margin: 0px 0px 0px 0px;
             border-radius: 5px;
             display: flex;
             flex-wrap: wrap;
@@ -306,13 +308,13 @@ main a:hover {
             }
 
             .aquarium {
-                background-image: url(assets/images/image1.gif);
+                background-image: url(../images/image1.gif);
                 background-position: -100px -33px;
                 background-size: 200% auto;
             }
 
             .trampolines {
-                background-image: url(assets/images/trampolines.gif);
+                background-image: url(../images/trampolines.gif);
                 background-size: 320px 220px;
                 background-position: -77px -13px;
             }
@@ -334,7 +336,7 @@ main a:hover {
             }
 
             .ethics-graphic {
-                background-image: url(assets/images/ethics.png);
+                background-image: url(../images/ethics.png);
                 background-size: 190px;
                 background-position: center;
                 max-width: 250px;
@@ -350,7 +352,7 @@ main a:hover {
             }
 
             .students {
-                background-image: url(assets/images/students.png);
+                background-image: url(../images/students.png);
                 background-size: auto 100%;
                 background-position: center -20px;
                 max-width: 350px;
@@ -358,7 +360,7 @@ main a:hover {
             }
 
             .data-design {
-                background-image: url(assets/images/bikelane.jpg);
+                background-image: url(../images/bikelane.jpg);
                 background-size: cover; //auto 100%;
                 background-position: center; // -20px;
                 max-width: 350px;
@@ -435,7 +437,7 @@ main a:hover {
         padding-right: 4vw;
     }
     .poppies-bottom {
-        background-image: url('assets/images/poppies1.png');
+        background-image: url('../images/poppies1.png');
         background-position: top right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -462,6 +464,7 @@ main a:hover {
             }
         }
         .image {
+            border: solid 1px #000;
             margin-top: 20px;
             width: 100%;
             display: flex;
