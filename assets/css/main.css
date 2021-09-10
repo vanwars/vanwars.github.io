@@ -11,8 +11,10 @@ body, body * {
           box-sizing: border-box;
 }
 
-p {
-  line-height: 1.5em;
+p, a, td, th {
+  line-height: 1.6em;
+  font-size: 1.05em;
+  text-align: justify;
 }
 
 .mobile {
@@ -190,6 +192,10 @@ main h4 {
   font-size: 1.4em;
 }
 
+main .about {
+  padding-top: 40px;
+}
+
 footer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -243,11 +249,16 @@ h1 {
   left: -36px;
 }
 
-.publications table td {
+.publications td, .publications th, .publications a, .publications li {
+  font-size: 0.90rem;
+  line-height: 1.5rem;
+}
+
+.publications td {
   vertical-align: top;
 }
 
-.publications table td:first-child {
+.publications td:first-child {
   min-width: 60px !important;
   font-weight: 600;
 }
@@ -259,22 +270,20 @@ h1 {
   max-width: calc(100vw - 100px);
 }
 
-.publications li {
-  line-height: 1.6em;
+.publications ul li {
   list-style-type: none;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   margin-left: 2em;
   text-indent: -2em;
 }
 
-main a, main a:visited, main a:hover {
-  text-decoration: none;
-  /* color: #255C99; */
-  color: #859503;
+main a, main a:visited, main a:active, main a:link {
+  text-decoration: underline;
+  color: #2978A0;
 }
 
 main a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .region section a {
@@ -343,6 +352,9 @@ main a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 20px 0px 40px 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .teaching p, .teaching h3, .project p, .project h3 {
@@ -353,29 +365,31 @@ main a:hover {
       align-self: flex-start;
 }
 
+.teaching .years, .project .years {
+  width: 100px;
+}
+
+.teaching .years h2, .project .years h2 {
+  margin-top: 0px;
+  font-size: 1.4em;
+}
+
 .teaching .image, .project .image {
-  min-height: 175px;
-  border: solid 1px #EEE;
-  border-radius: 4px;
-  background: radial-gradient(#EEE 15%, transparent 16%) 0 0, radial-gradient(#EEE 15%, transparent 16%) 4px 4px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 4px 5px;
-  background-color: #FFFFF7;
-  background-size: 8px 8px;
-  width: 250px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .teaching .image > div, .project .image > div {
   width: 100%;
   margin: 0px 0px 0px 0px;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,9 +402,10 @@ main a:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 200px;
 }
 
 .teaching .image > div img, .teaching .image > div span, .project .image > div img, .project .image > div span {
@@ -407,10 +422,10 @@ main a:hover {
 
 .teaching .image > div .aquarium, .teaching .image > div .trampolines, .teaching .image > div .web-graphic,
 .teaching .image > div .hci-graphic, .teaching .image > div .ethics-graphic, .teaching .image > div .data-design,
-.teaching .image > div .web-design-graphic, .teaching .image > div .students, .teaching .image > div .lg, .project .image > div .aquarium, .project .image > div .trampolines, .project .image > div .web-graphic,
+.teaching .image > div .web-design-graphic, .teaching .image > div .students, .teaching .image > div .lg, .teaching .image > div .yweb, .project .image > div .aquarium, .project .image > div .trampolines, .project .image > div .web-graphic,
 .project .image > div .hci-graphic, .project .image > div .ethics-graphic, .project .image > div .data-design,
-.project .image > div .web-design-graphic, .project .image > div .students, .project .image > div .lg {
-  height: 175px;
+.project .image > div .web-design-graphic, .project .image > div .students, .project .image > div .lg, .project .image > div .yweb {
+  height: 150px;
   width: 100%;
   background-clip: content-box;
   background-repeat: no-repeat;
@@ -418,20 +433,20 @@ main a:hover {
 
 .teaching .image > div .aquarium, .project .image > div .aquarium {
   background-image: url(../images/image1.gif);
-  background-position: -100px -33px;
-  background-size: 200% auto;
+  background-position: -50px -3px;
+  background-size: 250px 159px;
 }
 
 .teaching .image > div .trampolines, .project .image > div .trampolines {
   background-image: url(../images/trampolines.gif);
   background-size: 320px 220px;
-  background-position: -77px -13px;
+  background-position: cover;
 }
 
 .teaching .image > div .web-graphic, .project .image > div .web-graphic {
   background-image: url(https://img.icons8.com/clouds/500/web-laptop.png);
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: center -25px;
   max-width: 240px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -440,8 +455,8 @@ main a:hover {
 
 .teaching .image > div .hci-graphic, .project .image > div .hci-graphic {
   background-image: url(https://web.mit.edu/6.813/www/sp18/classes/06-user-centered-design/figures/06.png);
-  background-size: 100% auto;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   max-width: 300px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -450,7 +465,7 @@ main a:hover {
 
 .teaching .image > div .ethics-graphic, .project .image > div .ethics-graphic {
   background-image: url(../images/ethics.png);
-  background-size: 190px;
+  background-size: contain;
   background-position: center;
   max-width: 250px;
   -ms-flex-item-align: center;
@@ -460,7 +475,7 @@ main a:hover {
 
 .teaching .image > div .web-design-graphic, .project .image > div .web-design-graphic {
   background-image: url(https://1zaja5380s332hs2h2r9fce1-wpengine.netdna-ssl.com/kansas-city/wp-content/uploads/sites/2/2017/05/kansas-city-website-design-kansas-city-web-development-asset.png);
-  background-size: auto 100%;
+  background-size: contain;
   background-position: center;
   max-width: 350px;
   -ms-flex-item-align: center;
@@ -482,6 +497,16 @@ main a:hover {
   background-image: url(../images/bikelane.jpg);
   background-size: cover;
   background-position: center;
+  max-width: 350px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.teaching .image > div .yweb, .project .image > div .yweb {
+  background-image: url(https://www.ywca-ens.org/wp-content/uploads/sites/16/YWeb-photo-and-logo.png);
+  background-size: auto 100%;
+  background-position: center -30px;
   max-width: 350px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -511,8 +536,8 @@ main a:hover {
 }
 
 .teaching .image > div canvas, .project .image > div canvas {
-  width: 250px;
-  height: 170px;
+  width: 200px;
+  height: 120px;
 }
 
 .teaching .image > div .api-tutor, .project .image > div .api-tutor {
@@ -534,23 +559,31 @@ main a:hover {
 
 .teaching .details, .project .details {
   padding-left: 30px;
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
+}
+
+.teaching .details p, .teaching .details a, .teaching .details td, .teaching .details th, .teaching .details li, .project .details p, .project .details a, .project .details td, .project .details th, .project .details li {
+  font-size: 1.0rem;
 }
 
 .teaching .details .course-links, .project .details .course-links {
-  background: #fff;
-  border: dotted 1px #CCC;
-  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.teaching .details .course-links a, .teaching .details .course-links td, .teaching .details .course-links th, .project .details .course-links a, .project .details .course-links td, .project .details .course-links th {
+  font-size: 0.9rem;
+  line-height: 1.4em;
 }
 
 .teaching .details .course-links td, .teaching .details .course-links th, .project .details .course-links td, .project .details .course-links th {
   margin: 0px;
-  padding: 1px 7px;
+  padding: 0px 10px 0px 0px;
 }
 
-.teaching .details .course-links th, .project .details .course-links th {
-  text-align: left;
-  font-weight: 600;
+.teaching .details .sessions, .project .details .sessions {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  list-style-type: square;
 }
 
 @media (max-width: 1100px) {
@@ -563,6 +596,9 @@ main a:hover {
 @media (max-width: 800px) {
   .desktop {
     display: none !important;
+  }
+  p, a, td, th {
+    text-align: left;
   }
   main {
     padding-left: 4vw;
@@ -600,6 +636,9 @@ main a:hover {
   .teaching .details ul, .project .details ul {
     margin-bottom: auto;
   }
+  .teaching .years, .project .years {
+    display: none;
+  }
   .teaching .image, .project .image {
     min-height: auto;
     margin-top: 20px;
@@ -625,8 +664,8 @@ main a:hover {
   }
   .teaching .image > div .aquarium, .project .image > div .aquarium {
     width: 100%;
-    background-position: -11px -33px;
-    background-size: 120% auto;
+    background-position: -50px -92px;
+    background-size: cover;
   }
   .teaching .image > div img, .teaching .image > div span, .project .image > div img, .project .image > div span {
     height: 100%;
