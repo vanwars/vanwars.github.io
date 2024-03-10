@@ -10,7 +10,11 @@
                 "2023-2024": [
                     {
                         "period": "Fall",
-                        "url": "https://csci338.github.io/fall2023/",
+                        "url": "https://csci338.github.io/fall2023/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://github.com/cs-at-unca/software-engineering",
                         "notes": "(with Semmy Purewal)"
                     }
                 ]
@@ -18,14 +22,18 @@
         },
         {
             "years": "2023 -",
-            "code": "CSCI 480",
-            "title": "Capstone I",
-            "description": "Part 1 of a comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
+            "code": "CSCI 480 / 481",
+            "title": "Capstone",
+            "description": "A comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
             "sessions": {
                 "2022-2023": [
                     {
                         "period": "Fall",
-                        "url": "https://docs.google.com/document/d/1678p6ZXKqNflDruk6a015rUeJLZ3IPXOJYPRX5Llpzg/edit#heading=h.ju6b4b6k6zry"
+                        "url": "https://docs.google.com/document/d/1678p6ZXKqNflDruk6a015rUeJLZ3IPXOJYPRX5Llpzg/edit?usp=sharing"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/1O-CA06D7LpMhFY-logkzxZVzw2kRHHXabf8gXUDvM9Y/edit?usp=sharing"
                     }
                 ]
             }
@@ -54,6 +62,10 @@
                     {
                         "period": "Fall",
                         "url": "https://csci-185.github.io/fall2023/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci-185.github.io/spring2024/"
                     }
                 ],
                 "2022-2023": [

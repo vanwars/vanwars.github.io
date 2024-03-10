@@ -21,8 +21,8 @@ const pinNews = () => {
 
 const displayNews = async () => {
     const response = await fetch("/assets/data/news.json");
-    const data = await response.json();
-    const maxLength = 3;
+    let data = await response.json();
+    const maxLength = 10;
     if (data.length > maxLength) {
         data = data.slice(0, maxLength);
         console.log(data);
