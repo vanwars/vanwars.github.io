@@ -14,7 +14,6 @@
                     },
                     {
                         "period": "Spring",
-                        "url": "https://github.com/cs-at-unca/software-engineering",
                         "notes": "(with Semmy Purewal)"
                     }
                 ]
@@ -70,12 +69,12 @@
                 ],
                 "2022-2023": [
                     {
-                        "period": "Spring",
-                        "url": "https://csci-185.github.io/spring2022/"
-                    },
-                    {
                         "period": "Fall",
                         "url": "https://csci-185.github.io/fall2022/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci-185.github.io/spring2023/"
                     }
                 ]
             }
