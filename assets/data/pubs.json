@@ -9,7 +9,7 @@
         "doi": "https://repository.isls.org/handle/1/9951"
     }, {
         "title" : "Scripts and counterscripts in community-based data science: Participatory digital mapping and the pursuit of a third space",
-        "authors": "Van Wart, S.J., Lanouette, K., Parikh, T. S.",
+        "authors": "Van Wart, S.J., Lanouette, K., Parikh, T.S.",
         "date": "2020",
         "type": "journal",
         "venue": "Journal of the Learning Sciences",
@@ -25,7 +25,7 @@
         "location": "Lyon, FR"
     }, {
         "title" : "Supporting elementary students’ learning about ecological systems through data modeling and interactive mapping in local contexts",
-        "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T. S.",
+        "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S.",
         "date": "2016",
         "type": "conference",
         "venue": "Proceedings of the International Conference of the Learning Sciences (ICLS)",
@@ -33,7 +33,7 @@
         "location": "Singapore"
     }, {
         "title" : "Apps for social justice: Motivating computer science learning with design and real-world problem solving",
-        "authors": "Van Wart, S.J., Vakil, S., & Parikh, T. S.",
+        "authors": "Van Wart, S.J., Vakil, S., & Parikh, T.S.",
         "date": "2014",
         "type": "conference",
         "venue": "Proceedings of the Conference on Innovation & Technology in Computer Science Education (ITiCSE)",
@@ -50,6 +50,14 @@
         "location": "Egham, UK",
         "doi": "https://doi.org/10.1145/1926180.1926194"
     }, {
+        "title" : "Participatory Digital Mapping, Dynamic Data, and Children's Science Argumentation: Possibilities in Elementary Science Ecology Studies",
+        "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S",
+        "date": "2024",
+        "type": "workshop",
+        "venue": "Roundtable session presented at the Annual Meeting of the American Educational Research Association (AERA)",
+        "location": "Philadelphia, PA"
+    }
+    ,{
         "title" : "Developing Artificial Intelligence Literacy by Examining the Politics of Internet Platforms",
         "chairs": "Zheng et al. (chairs)",
         "symposium_title": "Artificial Intelligence in Education: Potentials and Challenges in Ethics, Data Privacy, and Pedagogy",
@@ -92,7 +100,7 @@
         "doi": "https://doi.dx.org/10.22318/icls2020.343"
     }, {
         "title" : "Local Ground: Supporting local, data-driven inquiry with youth",
-        "authors": "Van Wart, S.J., Lanouette, K., & Parikh, T",
+        "authors": "Van Wart, S.J., Lanouette, K., & Parikh, T.S.",
         "date": "2016",
         "type": "workshop",
         "venue": "Poster Session Presented at the Annual Meeting of the American Educational Research Association (AERA)",
@@ -108,7 +116,7 @@
         "doi": "https://dl.acm.org/doi/10.1145/2787622.2787751"
     }, {
         "title" : "Local Ground: A Toolkit Supporting Metarepresentational Competence in Data Science.",
-        "authors": "Van Wart, S.J. & Parikh, T. S.",
+        "authors": "Van Wart, S.J. & Parikh, T.S.",
         "date": "2014",
         "type": "poster",
         "venue": "Poster at the International Conference of the Learning Sciences (ICLS)",
@@ -116,7 +124,7 @@
         "pages": "1589–1590"
     }, {
         "title" : "Increasing Youth and Community Agency in GIS",
-        "authors": "Van Wart, S.J. & Parikh, T. S.",
+        "authors": "Van Wart, S.J. & Parikh, T.S.",
         "date": "2013",
         "type": "workshop",
         "venue": "Paper Presented at the Geographic Human-Computer Interaction (GeoHCI) Workshop at SIGCHI",
@@ -124,7 +132,7 @@
         "pages": "1–3",
         "doi": "https://www-users.cs.umn.edu/~bhecht/geohci2013ps/GeoHCI2013_Proceedings.pdf"
     }, {
-        "authors" : "Soep, E., Lee, C., Van Wart, S.J., Parikh, T. S.",
+        "authors" : "Soep, E., Lee, C., Van Wart, S.J., Parikh, T.S.",
         "title": "Code for What?",
         "editors": "Jenkins, H., Peters-Lazaro, G., & Shresthova S.",
         "date": "2020",
