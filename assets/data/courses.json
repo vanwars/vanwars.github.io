@@ -1,12 +1,30 @@
 {
     "UNC Asheville": 
-    [
+    [{
+        "years": "2024 -",
+            "code": "CSCI 174",
+            "title": "AI, Ethics, & Society (Diversity Intensive)",
+            "description": "A survey of the rapidly evolving role of artificial intelligence (AI) in society. The course examines the values, design choices and tradeoffs that AI-powered systems make across a range of contexts, situations, and stakeholders. For undergraduate students (all majors).",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall"
+                    }
+                ]
+            }
+        },
         {
             "years": "2023 -",
             "code": "CSCI 338",
             "title": "Software Engineering",
             "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
             "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2024/"
+                    }
+                ],
                 "2023-2024": [
                     {
                         "period": "Fall",
@@ -43,6 +61,12 @@
             "title": "Advanced Web Development",
             "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS Majors.",
             "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci344.github.io/fall2024/"
+                    }
+                ],
                 "2022-2023": [
                     {
                         "period": "Spring",
