@@ -1,7 +1,8 @@
 {
     "UNC Asheville": 
-    [{
-        "years": "2024 -",
+    [
+        {
+            "years": "2024 -",
             "code": "CSCI 174",
             "title": "AI, Ethics, & Society (Diversity Intensive)",
             "description": "A survey of the rapidly evolving role of artificial intelligence (AI) in society. The course examines the values, design choices and tradeoffs that AI-powered systems make across a range of contexts, situations, and stakeholders. For undergraduate students (all majors).",
@@ -10,68 +11,6 @@
                     {
                         "period": "Fall",
                         "url": "https://csci174.github.io/fall2024/"
-                    }
-                ]
-            }
-        },
-        {
-            "years": "2023 -",
-            "code": "CSCI 338",
-            "title": "Software Engineering",
-            "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
-            "sessions": {
-                "2024-2025": [
-                    {
-                        "period": "Fall",
-                        "url": "https://csci338.github.io/fall2024/"
-                    }
-                ],
-                "2023-2024": [
-                    {
-                        "period": "Fall",
-                        "url": "https://csci338.github.io/fall2023/"
-                    },
-                    {
-                        "period": "Spring",
-                        "notes": "(with Semmy Purewal)"
-                    }
-                ]
-            }
-        },
-        {
-            "years": "2023 -",
-            "code": "CSCI 480 / 481",
-            "title": "Capstone",
-            "description": "A comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
-            "sessions": {
-                "2022-2023": [
-                    {
-                        "period": "Fall",
-                        "url": "https://docs.google.com/document/d/1678p6ZXKqNflDruk6a015rUeJLZ3IPXOJYPRX5Llpzg/edit?usp=sharing"
-                    },
-                    {
-                        "period": "Spring",
-                        "url": "https://docs.google.com/document/d/1O-CA06D7LpMhFY-logkzxZVzw2kRHHXabf8gXUDvM9Y/edit?usp=sharing"
-                    }
-                ]
-            }
-        },
-        {
-            "years": "2023 -",
-            "code": "CSCI 344",
-            "title": "Advanced Web Development",
-            "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS Majors.",
-            "sessions": {
-                "2024-2025": [
-                    {
-                        "period": "Fall",
-                        "url": "https://csci344.github.io/fall2024/"
-                    }
-                ],
-                "2022-2023": [
-                    {
-                        "period": "Spring",
-                        "url": "https://csci344.github.io/spring2023/"
                     }
                 ]
             }
@@ -105,6 +44,20 @@
             }
         },
         {
+        "years": "2025 -",
+            "code": "CSCI 280",
+            "title": "Computer Science Seminar",
+            "description": "This professional development seminar helps computer science majors explore diverse career paths in the field. Students also participate in resume, interview, and networking workshops in preparation for internship and job searches.",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/14cJNgosVu0TPgmbV6pLTjncHq9I6nrZK/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true"
+                    }
+                ]
+            }
+        },
+        {
             "years": "2022 -",
             "code": "CSCI 333",
             "title": "Algorithms",
@@ -112,6 +65,82 @@
             "sessions": {
                 "2022-2023": [
                     {"period": "Fall"}
+                ]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 344",
+            "title": "Advanced Web Development",
+            "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS Majors.",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci344.github.io/fall2024/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci344.github.io/spring2025/"
+                    }
+                ],
+                "2022-2023": [
+                    {
+                        "period": "Spring",
+                        "url": "https://csci344.github.io/spring2023/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 338",
+            "title": "Software Engineering",
+            "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2024/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci338.github.io/spring2025/"
+                    }
+                ],
+                "2023-2024": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2023/"
+                    },
+                    {
+                        "period": "Spring",
+                        "notes": "(with Semmy Purewal)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 480 / 481",
+            "title": "Capstone",
+            "description": "A comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/13CMJEghKdwHAi2sx6_BwBs636dtjEUoS/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true"
+                    }
+                ],
+                "2022-2023": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1678p6ZXKqNflDruk6a015rUeJLZ3IPXOJYPRX5Llpzg/edit?usp=sharing"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/1O-CA06D7LpMhFY-logkzxZVzw2kRHHXabf8gXUDvM9Y/edit?usp=sharing"
+                    }
                 ]
             }
         }
@@ -195,6 +224,33 @@
             }
         },
         {
+            "years": "2019 - 2021",
+            "code": "CS 330",
+            "title": "Intro to Human-Computer Interaction",
+            "description": "The study and practice of making usable, accessible interfaces that meet human needs. For undergraduate and master's students (all majors).",
+            "sessions": {
+                "2020-2021": [
+                    {
+                        "period": "Winter",
+                        "url": "https://hci330.github.io/winter2021/",
+                        "notes": " (MS of Artificial Intelligence)"
+                    }
+                ],
+                "2019-2020": [
+                    {
+                        "period": "Winter",
+                        "url": "https://hci330.github.io/winter2020/"
+                    }
+                ],
+                "2018-2019": [
+                    {
+                        "period": "Winter",
+                        "notes": " (with Nell O'Rourke)"
+                    }
+                ]
+            }
+        },
+        {
             "years": "2020 - 2022",
             "code": "CS 396",
             "title": "Intro to Full Stack Web Development",
@@ -242,33 +298,6 @@
                     {
                         "period": "Winter",
                         "url": "https://nu-tech-ethics.github.io/winter2021/syllabus/"
-                    }
-                ]
-            }
-        },
-        {
-            "years": "2019 - 2021",
-            "code": "CS 330",
-            "title": "Intro to Human-Computer Interaction",
-            "description": "The study and practice of making usable, accessible interfaces that meet human needs. For undergraduate and master's students (all majors).",
-            "sessions": {
-                "2020-2021": [
-                    {
-                        "period": "Winter",
-                        "url": "https://hci330.github.io/winter2021/",
-                        "notes": " (MS of Artificial Intelligence)"
-                    }
-                ],
-                "2019-2020": [
-                    {
-                        "period": "Winter",
-                        "url": "https://hci330.github.io/winter2020/"
-                    }
-                ],
-                "2018-2019": [
-                    {
-                        "period": "Winter",
-                        "notes": " (with Nell O'Rourke)"
                     }
                 ]
             }
