@@ -1,15 +1,20 @@
 const getTitle = (item) => {
-    return item.doi
-        ? `<a href="${item.doi}" target="_blank">${item.title}</a>`
+    const url = item.url || item.doi;
+    return url
+        ? `<a href="${url}" target="_blank">${item.title}</a>`
         : `${item.title}`;
 };
 
 const getVenue = (item) => {
     let html = `<em>${item.venue}</em>`;
-    if (item.volume && item.issue) {
-        html += `, ${item.volume}(${item.issue}), ${item.pages}`;
-    } else if (item.pages) {
-        html += ` (${item.pages})`;
+    if (item.volume) {
+        html += `<em>, ${item.volume}</em>`;
+    }
+    if (item.issue) {
+        html += ` (${item.issue})`;
+    }
+    if (item.pages) {
+        html += `, ${item.pages}`;
     }
     html += ". ";
     return html;
@@ -46,6 +51,7 @@ const jsonToHTMLGeneric = (item) => {
             ${getTitle(item)}. 
             ${getVenue(item)} 
             ${getLocation(item)}
+            ${item.doi ? item.doi : ""}
         </li>
     `;
 };
