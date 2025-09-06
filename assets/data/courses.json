@@ -1,6 +1,19 @@
 {
-    "UNC Asheville": 
-    [
+    "UNC Asheville": [
+        {
+            "years": "2025 -",
+            "code": "MSER 521",
+            "title": "Visualizing & Communicating Data",
+            "description": "Through this course, students learn how to select between different visual displays of information, assess the usability and effectiveness of data interfaces, communicate data insights through clear, compelling narratives, and understand the possibilities and challenges of using interactive data tools to inform public planning.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://mser521.github.io/fall2025/"
+                    }
+                ]
+            }
+        },
         {
             "years": "2024 -",
             "code": "CSCI 174",
@@ -44,11 +57,17 @@
             }
         },
         {
-        "years": "2025 -",
+            "years": "2025 -",
             "code": "CSCI 280",
             "title": "Computer Science Seminar",
             "description": "This professional development seminar helps computer science majors explore diverse career paths in the field. Students also participate in resume, interview, and networking workshops in preparation for internship and job searches.",
             "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1eDcpI6dgeYLqz3OI0-r-PMuQvdFuTDso/edit?tab=t.0#heading=h.gjdgxs"
+                    }
+                ],
                 "2024-2025": [
                     {
                         "period": "Spring",
@@ -63,9 +82,7 @@
             "title": "Algorithms",
             "description": "The study of data structures, some of the efficient algorithms that use them, and how to represent and implement them in Java. For CS majors and minors.",
             "sessions": {
-                "2022-2023": [
-                    {"period": "Fall"}
-                ]
+                "2022-2023": [{ "period": "Fall" }]
             }
         },
         {
@@ -98,6 +115,12 @@
             "title": "Software Engineering",
             "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
             "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2025/"
+                    }
+                ],
                 "2024-2025": [
                     {
                         "period": "Fall",
@@ -126,6 +149,12 @@
             "title": "Capstone",
             "description": "A comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
             "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1zwQnW3yb-XjEoQO4pkO3DwI4zVV16tTN/edit#heading=h.4s8v4bqq3eun"
+                    }
+                ],
                 "2024-2025": [
                     {
                         "period": "Spring",
@@ -207,8 +236,7 @@
                         "period": "Spring",
                         "url": "https://eecs130.github.io/spring2021/"
                     }
-                ]
-                ,
+                ],
                 "2019-2020": [
                     {
                         "period": "Spring",
@@ -257,7 +285,6 @@
             "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS undergraduate and master's students.",
             "sessions": {
                 "2021-2022": [
-                    
                     {
                         "period": "Winter",
                         "url": "https://cs396-web-dev.github.io/winter2022/"
@@ -339,7 +366,8 @@
         }
     ],
     "UC Berkeley - School of Information": [
-        {"years": "2016 - 2018",
+        {
+            "years": "2016 - 2018",
             "code": "Info 206",
             "title": "Distributed Computing Applications & Infrastructure",
             "description": "An introduction to the fundamentals of data structures and data analysis (in Python) for Master's students.",
