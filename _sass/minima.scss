@@ -1,4 +1,6 @@
 //Import partials.
-@use "minima/main";
-@use "minima/flair";
-@use "minima/side-nav";
+@import
+  "minima/main",
+  "minima/flair",
+  "minima/side-nav"
+;

@@ -1,5 +1,3 @@
-@use "main";
-
 aside.side-menu {
     top: 48px;
     position: sticky;
@@ -23,9 +21,9 @@ aside.side-menu {
     }
     
     a.active, a:hover {
-        border-left: solid 2px main.$redpurple;
-        // border-bottom: solid 2px main.$redpurple;
-        color: main.$orange;
+        border-left: solid 2px $redpurple;
+        // border-bottom: solid 2px $redpurple;
+        color: $orange;
         font-weight: 600;
     }
 
