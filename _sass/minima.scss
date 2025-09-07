@@ -1,19 +1,4 @@
-// //Import partials.
-// @import
-//   "minima/base",
-//   "minima/fonts",
-//   "minima/tables",
-//   "minima/assignments",
-//   "minima/one-column",
-//   "minima/two-column",
-//   "minima/syntax-highlight",
-//   "minima/detail",
-//   "minima/mobile"
-// ;
-
 //Import partials.
-@import
-  "minima/main",
-  "minima/flair",
-  "minima/side-nav"
-;
+@use "minima/main";
+@use "minima/flair";
+@use "minima/side-nav";
