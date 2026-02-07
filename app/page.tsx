@@ -4,12 +4,12 @@ import Publications from "@/components/Publications";
 
 export default function Home() {
   return (
-    <main className="two-column">
-      <div className="left">
+    <main className="pt-10 min-h-[65vh] max-w-[800px] mx-auto md:max-w-[1000px] md:grid md:items-start md:grid-cols-[220px_auto] md:gap-[60px] md:mx-auto md:max-w-[1000px]">
+      <div className="hidden md:block">
         <News />
       </div>
-      <div className="right">
-        <p>
+      <div className="md:pl-0 md:max-md:pl-[5vw]">
+        <p className="leading-[1.6em] text-[1.0em] mt-0">
           I am an Assistant Professor in the{' '}
           <a href="https://cs.unca.edu/">Department of Computer Science</a> at the
           University of North Carolina Asheville. As an educator, I develop and teach
@@ -21,7 +21,7 @@ export default function Home() {
           computational tools that support civic advocacy and citizen science
           initiatives.
         </p>
-        <p>
+        <p className="leading-[1.6em] text-[1.0em] mt-0">
           Prior to joining UNCA, I was an Assistant Professor of Instruction at
           Northwestern University, where I co-directed the TREE Lab with Sepehr Vakil.
           My Ph.D. is from the UC Berkeley{' '}
@@ -32,15 +32,15 @@ export default function Home() {
           city and regional development projects.
         </p>
 
-        <h1 id="teaching">Teaching & Course Design</h1>
+        <h1 id="teaching" className="font-cursive text-[2.5em] text-black m-0 pt-[60px] -mt-[30px]">Teaching & Course Design</h1>
         <Courses />
 
-        <h1 id="publications">Scholarship</h1>
+        <h1 id="publications" className="font-cursive text-[2.5em] text-black m-0 pt-[60px] -mt-[30px]">Scholarship</h1>
         <Publications />
 
-        <h1 id="contact">Contact</h1>
-        <section className="contact">
-          <p>To contact me, please email me at svanwart@unca.edu.</p>
+        <h1 id="contact" className="font-cursive text-[2.5em] text-black m-0 pt-[60px] -mt-[30px]">Contact</h1>
+        <section className="bg-[url(/images/poppies-bottom-right.png)] bg-[bottom_right] bg-no-repeat bg-[130px_170px] min-h-[200px]">
+          <p className="leading-[1.6em] text-[1.0em] mt-0">To contact me, please email me at svanwart@unca.edu.</p>
         </section>
       </div>
     </main>

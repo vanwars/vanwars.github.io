@@ -6,9 +6,9 @@ export default function Header({ heading = "Sarah Van Wart" }: HeaderProps) {
   return (
     <>
       <div className="poppies"></div>
-      <header id="home">
-        <h1>{heading}</h1>
-        <a className="menu-toggle mobile" href="#" aria-label="button to toggle navigation menu">
+      <header id="home" className="flex justify-center items-end">
+        <h1 className="mb-0 text-[3em] mt-10 font-cursive">{heading}</h1>
+        <a className="menu-toggle hidden md:hidden" href="#" aria-label="button to toggle navigation menu">
           <i className="fas fa-bars"></i>
         </a>
       </header>
