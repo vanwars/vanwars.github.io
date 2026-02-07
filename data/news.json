@@ -1,32 +1,28 @@
 [
     {
-        "title": "UNC Asheville Innovation Translation Lab Launch",
-        "date": "2/1/2026",
-        "description": "Excited to help launch the UNC Asheville CS Innovation Lab with Dr. Kevin Sanft and NCInnovation, connecting faculty expertise and studio-based student teams to translate research into impactful, real-world technology."
+      "title": "YW Tech Lab Project: The AUX",
+      "date": "7/1/2023",
+      "description": "Completed the design and development of a new website for <a href=\"https://theauxevanston.com/meet-our-tenants/\" target=\"_blank\">The AUX</a> through the YW Tech Lab, led by a studio-based student web development team."
     },
     {
-        "title": "YW Tech Lab Website Launch: The AUX",
-        "date": "7/1/2023",
-        "description": "Our second YW Tech Lab website, <a href=\"https://theauxevanston.com/meet-our-tenants/\" target=\"_blank\">The AUX</a>. A huge congratulations to the team!"
+      "title": "NSF BRAID Grant Awarded",
+      "date": "9/1/2023",
+      "description": "Serving as a Co-PI on an NSF BRAID grant supporting research on neuromorphic systems and their broader societal and ethical impacts, with undergraduate students contributing to research and public-facing work."
     },
     {
-        "title": "NSF BRAID Grant Awarded",
-        "date": "9/1/2023",
-        "description": "Honored to serve as a Co-PI on an NSF grant supporting research on neuromorphic systems and their broader societal and ethical impacts."
+      "title": "YW Tech Lab Project: Answer the Moment",
+      "date": "8/1/2022",
+      "description": "Completed the first YW Tech Lab website, Answer the Moment, designed and built by a student web development team."
     },
     {
-        "title": "Answer the Moment Website Launch",
-        "date": "8/1/2022",
-        "description": "Excited to announce the launch of our first YW Tech Lab website, <a href=\"https://www.answerthemoment.com/\" target=\"_blank\">Answer the Moment</a>. Congratulations to our creative, dedicated, and talented web developers!"
+      "title": "Joining UNC Asheville",
+      "date": "7/1/2022",
+      "description": "Joined the UNC Asheville Computer Science Department as an Assistant Professor, teaching and mentoring students in software engineering, web development, and computing ethics."
     },
     {
-        "title": "Joining UNC Asheville, Fall 2022",
-        "date": "7/1/2022",
-        "description": "I'm thrilled to be joining the Computer Science Department at UNC Asheville this Fall!"
-    },
-    {
-        "title": "Racial Equity & Community Partnership Grant Recipient",
-        "date": "5/27/2022",
-        "description": "Happy to be a recipient of the 2022 <a href=\"https://news.northwestern.edu/stories/2022/08/racial-equity-and-community-partnership-grants-awarded/\" target=\"_blank\">Racial Equity & Community Partnership Grant</a> to continue supporting the web design apprenticeship program with the YW Tech Lab!"
+      "title": "Racial Equity & Community Partnership Grant Recipient",
+      "date": "5/27/2022",
+      "description": "Received a 2022 <a href=\"https://news.northwestern.edu/stories/2022/08/racial-equity-and-community-partnership-grants-awarded/\" target=\"_blank\">Racial Equity & Community Partnership Grant</a> to support and expand the YW Tech Lab web design apprenticeship program."
     }
-]
+  ]
+  

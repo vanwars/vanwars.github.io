@@ -67,8 +67,8 @@ const renderPublication = (item: Publication, lastYear: string) => {
   if (item.type === 'symposium') {
     return (
       <li key={`${item.year}-${item.title}`} className="pub-entry">
-        <div className="font-semibold">{year}</div>
-        <div className="text-base leading-[1.6em] break-words">
+        <div className="font-semibold max-md:text-lg">{year}</div>
+        <div className="citation">
           {item.authors} ({item.date}).{' '}
           <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />. In{' '}
           {item.chairs}, {item.symposium_title} [Symposium].{' '}
@@ -82,8 +82,8 @@ const renderPublication = (item: Publication, lastYear: string) => {
   if (item.type === 'book chapter') {
     return (
       <li key={`${item.year}-${item.title}`} className="pub-entry">
-        <div className="font-semibold">{year}</div>
-        <div className="text-base leading-[1.6em] break-words">
+        <div className="font-semibold max-md:text-lg">{year}</div>
+        <div className="citation">
           {item.authors} ({item.date}).{' '}
           <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />. In{' '}
           <span dangerouslySetInnerHTML={{ __html: getBook(item) }} />
@@ -95,7 +95,7 @@ const renderPublication = (item: Publication, lastYear: string) => {
   return (
     <li key={`${item.year}-${item.title}`} className="pub-entry">
       <div className="font-semibold">{year}</div>
-      <div className="text-base leading-[1.6em] break-words">
+      <div className="citation">
         {item.authors} ({item.date}).{' '}
         <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />.{' '}
         <span dangerouslySetInnerHTML={{ __html: getVenue(item) }} />{' '}
@@ -127,7 +127,7 @@ export default function Publications() {
         
         return (
           <div key={groupName} className="mb-10">
-            <h2 className="font-condensed text-[1.8em] text-blue border-b border-blue font-medium pb-[3px] mt-0 mb-[10px]">{groupName}</h2>
+            <h2 className="font-condensed text-[1.8em] max-md:text-[2em] text-blue border-b border-blue font-medium pb-[3px] mt-0 mb-[10px]">{groupName}</h2>
             <ul className="m-0 p-0 mb-10">
               {pubs.map((pub) => {
                 const rendered = renderPublication(pub, lastYear);

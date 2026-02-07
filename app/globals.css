@@ -24,7 +24,7 @@
   body {
     margin: 0;
     font-family: var(--font-sans);
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #222;
     background: #FFFFF7;
   }
@@ -34,20 +34,46 @@
   }
 
   p, a, td, th, li {
-    line-height: 1.6em;
-    font-size: 1.0em;
+    line-height: 1.6rem;
+    font-size: 1.0rem;
     margin-top: 0;
   }
 
   h1 {
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 2.2rem;
   }
 
   blockquote {
     border-left: solid 2px #e91e63;
     padding-left: 10px;
     font-style: italic;
+  }
+
+  /* Table styles for teaching section */
+  .teaching table {
+    border-collapse: collapse;
+  }
+
+  .teaching table th:first-child,
+  .teaching table td:first-child {
+    min-width: 105px;
+  }
+
+  .teaching table td,
+  .teaching table th {
+    font-size: 1.0rem; /* Same size as course description (text-base) */
+    line-height: 1.4rem;
+    margin: 0;
+    /* padding: 2px 8px 2px 0; */
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .teaching table th {
+    font-weight: 400;
+    color: #666;
+    max-width: 100px !important;
   }
 
   /* Global link styles */
@@ -85,10 +111,27 @@
   main a:hover {
     text-decoration: none;
   }
+
+  /* Bibliography-style hanging indent for publications */
+  .publication-entry {
+    padding-left: 2rem;
+    text-indent: -2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6rem;
+    font-size: 1.0rem;
+    font-size: 1rem;
+  }
 }
+
 
 .pub-entry {
     @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] max-md:grid-cols-1 mb-3;
+}
+
+.citation {
+    @apply text-base leading-[1.6em] break-words;
+    text-indent: -2rem;
+    padding-left: 2rem;
 }
 
 @layer components {
@@ -130,6 +173,30 @@
   }
 
   nav.mobile ul li a {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  p, a, td, th, li {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .teaching table td,
+  .teaching table th {
+    font-size: 1.125rem;
+  }
+
+  .citation {
+    font-size: 1.125rem;
   }
 }

@@ -20,15 +20,15 @@ export default function News() {
 
   return (
     <section className="news">
-      <h1 className="m-0 mb-0 text-[0.85em] font-semibold uppercase text-black font-sans border-b-0">News</h1>
-      {news.map((item, idx) => (
-        <div key={idx}>
-          <section className={idx === 0 ? "pt-[5px] pb-[15px]" : "py-5"}>
-            <h2 className="m-0 mb-0 text-[0.8em] font-semibold uppercase text-black font-sans border-b-0">{item.title}</h2>
-            <p className="text-sm font-semibold text-redpurple my-[5px]">{item.date}</p>
-            <p className="text-sm leading-[1.4em] m-0" dangerouslySetInnerHTML={{ __html: item.description }} />
+        <h1 id="news" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">News</h1>
+        {news.map((item, idx) => (
+        <div key={idx} className={idx > 0 ? "mt-6" : ""}>
+          <section>
+            <h2 className="m-0 mb-2 text-base font-semibold uppercase text-black font-sans border-b-0">{item.title}</h2>
+            <p className="font-semibold text-redpurple mb-2" style={{ fontSize: '1rem' }}>{item.date}</p>
+            <p className="m-0 text-[0.9rem] text-gray-800" style={{ lineHeight: '1.3rem' }} dangerouslySetInnerHTML={{ __html: item.description }} />
           </section>
-          {idx < news.length - 1 && <hr className="bg-transparent h-0 border-0 border-b border-[#ccc]" />}
+          {idx < news.length - 1 && <hr className="bg-transparent h-0 border-0 border-b border-[#ccc] mt-4" />}
         </div>
       ))}
     </section>
