@@ -1,65 +1,48 @@
-import Image from "next/image";
+import News from "@/components/News";
+import Courses from "@/components/Courses";
+import Publications from "@/components/Publications";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="two-column">
+      <div className="left">
+        <News />
+      </div>
+      <div className="right">
+        <p>
+          I am an Assistant Professor in the{' '}
+          <a href="https://cs.unca.edu/">Department of Computer Science</a> at the
+          University of North Carolina Asheville. As an educator, I develop and teach
+          courses in human-computer interaction, web development, software engineering,
+          introductory programming, and computing and data ethics. As a researcher, I
+          design and study educational interventions that aim to broaden participation
+          in computing, and help emerging computer scientists recognize and engage with
+          the societal and ethical implications of their work. I also build
+          computational tools that support civic advocacy and citizen science
+          initiatives.
+        </p>
+        <p>
+          Prior to joining UNCA, I was an Assistant Professor of Instruction at
+          Northwestern University, where I co-directed the TREE Lab with Sepehr Vakil.
+          My Ph.D. is from the UC Berkeley{' '}
+          <a href="https://www.ischool.berkeley.edu/">School of Information</a>, where I
+          was advised by Tapan Parikh, and worked with Kris Gutiérrez, Paul Duguid, and
+          Coye Cheshire. Before academia, I worked as a software designer/developer,
+          building data and communication systems to support public accountability for
+          city and regional development projects.
+        </p>
+
+        <h1 id="teaching">Teaching & Course Design</h1>
+        <Courses />
+
+        <h1 id="publications">Scholarship</h1>
+        <Publications />
+
+        <h1 id="contact">Contact</h1>
+        <section className="contact">
+          <p>To contact me, please email me at svanwart@unca.edu.</p>
+        </section>
+      </div>
+    </main>
   );
 }

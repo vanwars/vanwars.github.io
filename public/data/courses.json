@@ -1,0 +1,426 @@
+{
+    "UNC Asheville": [
+        {
+            "years": "2024 -",
+            "code": "CSCI 174",
+            "title": "AI, Ethics, & Society (Diversity Intensive)",
+            "description": "A survey of the rapidly evolving role of artificial intelligence (AI) in society. The course examines the values, design choices and tradeoffs that AI-powered systems make across a range of contexts, situations, and stakeholders. For undergraduate students (all majors).",
+            "sessions": {
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci174.github.io/fall2024/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2022 -",
+            "code": "CSCI 185",
+            "title": "Intro to Programming for the Web",
+            "description": "Introduction to web design and basic programming using HTML, CSS, JavaScript, and REST APIs. For undergraduate students (all majors).",
+            "sessions": {
+                "2023-2024": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci-185.github.io/fall2023/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci-185.github.io/spring2024/"
+                    }
+                ],
+                "2022-2023": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci-185.github.io/fall2022/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci-185.github.io/spring2023/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2025 -",
+            "code": "CSCI 280",
+            "title": "Computer Science Seminar",
+            "description": "This professional development seminar helps computer science majors explore diverse career paths in the field. Students also participate in resume, interview, and networking workshops in preparation for internship and job searches.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1eDcpI6dgeYLqz3OI0-r-PMuQvdFuTDso/edit?tab=t.0#heading=h.gjdgxs"
+                    }
+                ],
+                "2024-2025": [
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/14cJNgosVu0TPgmbV6pLTjncHq9I6nrZK/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2022 -",
+            "code": "CSCI 333",
+            "title": "Algorithms",
+            "description": "The study of data structures, some of the efficient algorithms that use them, and how to represent and implement them in Java. For CS majors and minors.",
+            "sessions": {
+                "2022-2023": [{ "period": "Fall" }]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 338",
+            "title": "Software Engineering",
+            "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2025/"
+                    }
+                ],
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2024/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci338.github.io/spring2025/"
+                    }
+                ],
+                "2023-2024": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2023/"
+                    },
+                    {
+                        "period": "Spring",
+                        "notes": "(with Semmy Purewal)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 344",
+            "title": "Advanced Web Development",
+            "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS Majors.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Spring",
+                        "url": "https://csci344.github.io/spring2026/"
+                    }
+                ],
+                "2024-2025": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci344.github.io/fall2024/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://csci344.github.io/spring2025/"
+                    }
+                ],
+                "2022-2023": [
+                    {
+                        "period": "Spring",
+                        "url": "https://csci344.github.io/spring2023/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2026 -",
+            "code": "CSCI 373",
+            "title": "Industry Team Project",
+            "description": "A studio-based software development course where students work as a development team building software for a client, operating under technical, organizational, and time constraints. The course focuses on learning tools and techniques while delivering value to clients by understanding their needs, navigating constraints, and making informed tradeoffs throughout the development process.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Spring",
+                        "url": "https://csci373-apps.github.io/spring2026/",
+                        "notes": "(with Prof. Kevin Sanft)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2023 -",
+            "code": "CSCI 480 / 481",
+            "title": "Capstone",
+            "description": "A comprehensive, year-long software or research project of students' own choosing. Each student designs and develops their own software project idea, with the guidance of a faculty member. For CS majors.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1zwQnW3yb-XjEoQO4pkO3DwI4zVV16tTN/edit#heading=h.4s8v4bqq3eun"
+                    }
+                ],
+                "2024-2025": [
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/13CMJEghKdwHAi2sx6_BwBs636dtjEUoS/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true"
+                    }
+                ],
+                "2022-2023": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/1678p6ZXKqNflDruk6a015rUeJLZ3IPXOJYPRX5Llpzg/edit?usp=sharing"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://docs.google.com/document/d/1O-CA06D7LpMhFY-logkzxZVzw2kRHHXabf8gXUDvM9Y/edit?usp=sharing"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2025 -",
+            "code": "MSER 521",
+            "title": "Visualizing & Communicating Data",
+            "description": "Through this course, students learn how to select between different visual displays of information, assess the usability and effectiveness of data interfaces, communicate data insights through clear, compelling narratives, and understand the possibilities and challenges of using interactive data tools to inform public planning.",
+            "sessions": {
+                "2025-2026": [
+                    {
+                        "period": "Fall",
+                        "url": "https://mser521.github.io/fall2025/"
+                    }
+                ]
+            }
+        }
+    ],
+    "Northwestern University": [
+        {
+            "years": "2018 - 2022",
+            "code": "CS 110",
+            "title": "Intro to Programming with Python",
+            "description": "Introduction to the fundamental constructs of computer programming (using Python). Students author animations, games, and data-driven interfaces while exploring various computational principles. For undergraduates (all majors).",
+            "sessions": {
+                "2021-2022": [
+                    {
+                        "period": "Fall",
+                        "url": "https://eecs110.github.io/fall2021/"
+                    }
+                ],
+                "2020-2021": [
+                    {
+                        "period": "Winter",
+                        "url": "https://eecs110.github.io/winter2021/"
+                    },
+                    {
+                        "period": "Fall",
+                        "url": "https://eecs110.github.io/fall2020/"
+                    }
+                ],
+                "2019-2020": [
+                    {
+                        "period": "Winter",
+                        "url": "https://eecs110.github.io/winter2020/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs110.github.io/spring2020/"
+                    }
+                ],
+                "2018-2019": [
+                    {
+                        "period": "Winter",
+                        "url": "https://eecs110.github.io/winter2019/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs110.github.io/spring2019/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2018 - 2022",
+            "code": "CS 130",
+            "title": "Intro to Programming for the Web",
+            "description": "Introduction to web design and web development using HTML, CSS, JavaScript, and REST APIs. For undergraduate students (all majors).",
+            "sessions": {
+                "2021-2022": [
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs130.github.io/spring2022/"
+                    }
+                ],
+                "2020-2021": [
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs130.github.io/spring2021/"
+                    }
+                ],
+                "2019-2020": [
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs130.github.io/spring2020/"
+                    }
+                ],
+                "2018-2019": [
+                    {
+                        "period": "Spring",
+                        "url": "https://eecs130.github.io/spring2019/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2019 - 2021",
+            "code": "CS 330",
+            "title": "Intro to Human-Computer Interaction",
+            "description": "The study and practice of making usable, accessible interfaces that meet human needs. For undergraduate and master's students (all majors).",
+            "sessions": {
+                "2020-2021": [
+                    {
+                        "period": "Winter",
+                        "url": "https://hci330.github.io/winter2021/",
+                        "notes": " (MS of Artificial Intelligence)"
+                    }
+                ],
+                "2019-2020": [
+                    {
+                        "period": "Winter",
+                        "url": "https://hci330.github.io/winter2020/"
+                    }
+                ],
+                "2018-2019": [
+                    {
+                        "period": "Winter",
+                        "notes": " (with Nell O'Rourke)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2020 - 2022",
+            "code": "CS 396",
+            "title": "Intro to Full Stack Web Development",
+            "description": "Introduction to the methods, tools, and technologies for doing \"full stack\" web development, including HTML, CSS, and Javascript, web architecture, and web frameworks (server-side and client-side). For CS undergraduate and master's students.",
+            "sessions": {
+                "2021-2022": [
+                    {
+                        "period": "Winter",
+                        "url": "https://cs396-web-dev.github.io/winter2022/"
+                    },
+                    {
+                        "period": "Spring",
+                        "url": "https://cs396-web-dev.github.io/spring2022/",
+                        "notes": "(with design help from Victoria Chavéz)"
+                    }
+                ],
+                "2020-2021": [
+                    {
+                        "period": "Spring",
+                        "url": "https://cs396-web-dev.github.io/spring2021/",
+                        "notes": "(with design help from Cooper Barth & Linus Okoth)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2020 - 2022",
+            "code": "CS 396",
+            "title": "Computing, Ethics & Society",
+            "description": "An exploration of the benefits and harms (individual, cultural, political) of computing technologies; and an examination of the values, ideologies, and contexts through which computing technologies emerge. For undergraduate and master's students.",
+            "sessions": {
+                "2021-2022": [
+                    {
+                        "period": "Fall",
+                        "url": "https://nu-tech-ethics.github.io/fall2021/syllabus/"
+                    }
+                ],
+                "2020-2021": [
+                    {
+                        "period": "Fall",
+                        "url": "https://docs.google.com/document/d/18EN_JseX-NS2t4osLYBIE81cXeB-kr39/edit#heading=h.matflcqec8b3",
+                        "notes": " (with Sepehr Vakil & Natalie Melo)"
+                    },
+                    {
+                        "period": "Winter",
+                        "url": "https://nu-tech-ethics.github.io/winter2021/syllabus/"
+                    }
+                ]
+            }
+        }
+    ],
+    "Berkeley City College": [
+        {
+            "years": "2016 - 2018",
+            "code": "MMART 162",
+            "title": "Intro to Computer Programming with JavaScript",
+            "description": "Explores front-end, interactive programming concepts using JavaScript. This including working with HTML5 browser APIs (audio, canvas), working with front-end frameworks (e.g., p5.js, Angular, React), and working with REST APIs from third-party providers.",
+            "sessions": {
+                "2017-2018": [
+                    {
+                        "period": "Fall",
+                        "notes": " (Web App Focus with Ricky Holtz)"
+                    }
+                ],
+                "2016-2017": [
+                    {
+                        "period": "Fall",
+                        "notes": " (Animation focus)"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2016",
+            "code": "MMART 168",
+            "title": "Intro to Web Design with WordPress",
+            "description": "An introduction to Web design with HTML, CSS, and WordPress for community college students.",
+            "sessions": {
+                "2016-2017": [
+                    {
+                        "period": "Summer"
+                    }
+                ]
+            }
+        }
+    ],
+    "UC Berkeley - School of Information": [
+        {
+            "years": "2016 - 2018",
+            "code": "Info 206",
+            "title": "Distributed Computing Applications & Infrastructure",
+            "description": "An introduction to the fundamentals of data structures and data analysis (in Python) for Master's students.",
+            "sessions": {
+                "2012-2013": [
+                    {
+                        "period": "Spring",
+                        "notes": " (Graduate Teaching Assistant)"
+                    }
+                ],
+                "2013-2014": [
+                    {
+                        "period": "Summer",
+                        "notes": " (Lecturer)"
+                    }
+                ]
+            }
+        }
+    ],
+    "REALM Charter High School": [
+        {
+            "years": "2013 - 2014",
+            "title": "Data, Design, and Social Change",
+            "description": "High School Sociology course designed to help tenth grade students learn about their communities using design and data analysis methods (qualitative and quantitative).",
+            "sessions": {
+                "2013-2014": [
+                    {
+                        "period": "Spring",
+                        "notes": "(with Sepehr Vakil and Tapan Parikh)"
+                    }
+                ]
+            }
+        }
+    ]
+}
