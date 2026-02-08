@@ -9,7 +9,7 @@ export default function Home() {
         <News />
       </div>
       <div className="md:pl-0 md:max-md:pl-[5vw]">
-        <p className="leading-[1.6em] text-[1.0em] mt-0 mb-4">
+        <p className="leading-[1.6em] mb-4">
           I am an Assistant Professor in the{' '}
           <a href="https://cs.unca.edu/">Department of Computer Science</a> at the
           University of North Carolina Asheville. As an educator, I develop and teach
@@ -21,7 +21,7 @@ export default function Home() {
           computational tools that support civic advocacy and citizen science
           initiatives.
         </p>
-        <p className="leading-[1.6em] text-[1.0em] mt-0">
+        <p className="leading-[1.6em]">
           Prior to joining UNCA, I was an Assistant Professor of Instruction at
           Northwestern University, where I co-directed the TREE Lab with Sepehr Vakil.
           My Ph.D. is from the UC Berkeley{' '}

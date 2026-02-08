@@ -67,7 +67,7 @@ const renderPublication = (item: Publication, lastYear: string) => {
   if (item.type === 'symposium') {
     return (
       <li key={`${item.year}-${item.title}`} className="pub-entry">
-        <div className="font-semibold max-md:text-lg">{year}</div>
+        <div className="year">{year}</div>
         <div className="citation">
           {item.authors} ({item.date}).{' '}
           <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />. In{' '}
@@ -82,7 +82,7 @@ const renderPublication = (item: Publication, lastYear: string) => {
   if (item.type === 'book chapter') {
     return (
       <li key={`${item.year}-${item.title}`} className="pub-entry">
-        <div className="font-semibold max-md:text-lg">{year}</div>
+        <div className="year">{year}</div>
         <div className="citation">
           {item.authors} ({item.date}).{' '}
           <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />. In{' '}
@@ -94,7 +94,7 @@ const renderPublication = (item: Publication, lastYear: string) => {
   
   return (
     <li key={`${item.year}-${item.title}`} className="pub-entry">
-      <div className="font-semibold">{year}</div>
+      <div className="year">{year}</div>
       <div className="citation">
         {item.authors} ({item.date}).{' '}
         <span dangerouslySetInnerHTML={{ __html: getTitle(item) }} />.{' '}
