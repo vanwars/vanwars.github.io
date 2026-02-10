@@ -96,7 +96,7 @@ export default function CourseEntry({ course }: CourseEntryProps) {
           isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0 mt-0'
         }`}
       >
-        <p className="text-[1rem] max-md:text-lg leading-[1.4em] mb-[10px] pr-32">{course.description}</p>
+        <p className="text-[1rem] max-md:text-lg leading-[1.4em] mb-[10px] pr-0 md:pr-32">{course.description}</p>
         <div className="teaching" dangerouslySetInnerHTML={{ __html: toTable(course.sessions) }} />
       </div>
     </section>

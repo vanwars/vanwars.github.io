@@ -5,7 +5,7 @@ import Publications from "@/components/Publications";
 export default function Home() {
   return (
     <>
-    <main className="pt-10 min-h-[65vh] max-w-[800px] max-md:mx-4 md:max-w-[1000px] md:grid md:items-start md:grid-cols-[300px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
+    <main className="pt-10 min-h-[65vh] max-w-[800px] max-md:mx-4 md:max-w-[1000px] md:grid md:items-start md:grid-cols-[260px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
       <div className="hidden md:block">
         <News />
       </div>

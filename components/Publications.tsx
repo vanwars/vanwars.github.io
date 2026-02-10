@@ -80,10 +80,8 @@ const buildCitationHtml = (item: Publication) => {
   return `${prefix}${titleHtml}. ${getVenue(item)} ${getLocation(item)}${item.doi ? item.doi : ''}`;
 };
 
-const buildCitationHtmlAlternate = (item: Publication) => {
-//   const line1 = item.authors || '';
-//   const titlePart = item.url ? `<a href="${item.url}" target="_blank">${item.title}</a>` : item.title;
-  
+const buildCitationHtmlAlternate = (item: Publication, prevItem: Publication | null) => {
+
   const venuePart = item.venue ? `${item.venue}` : '';
   const volumePart = item.volume ? ` ${item.volume}` : '';
   const issuePart = item.issue ? ` (${item.issue})` : '';
@@ -101,7 +99,7 @@ const buildCitationHtmlAlternate = (item: Publication) => {
                 </a> : 
                 <span className="text-base max-md:text-lg leading-5 max-md:leading-7" style={{ textIndent: '0rem' }}>{item.title}</span>
             }
-            <span className={`max-md:hidden text-base text-right transition-all duration-200 ${url ? 'group-hover:text-redpurple group-hover:pr-4' : ''}`}>{item.year}</span>
+            <span className={`max-md:hidden text-base text-right transition-all duration-200 ${url ? 'group-hover:text-redpurple group-hover:pr-4' : ''}`}>{!prevItem || item.year !== prevItem.year ? item.year : ''}</span>
         </div>
         {/* Authors and venue */}
         <div className="mt-1 text-base grid grid-cols-[1fr_60px] gap-x-8 max-md:grid-cols-1 text-[0.9rem] max-md:text-lg leading-4 max-md:leading-6" style={{ color: '#777' }}>
@@ -137,7 +135,7 @@ export default function Publications() {
           <div key={groupName} className="mb-10">
             <h2 className="heading2">{groupName}</h2>
             <ul className="m-0 p-0 mb-10">
-              {pubs.map((pub) => {
+              {pubs.map((pub, i) => {
                 return (
                   <li key={`${pub.year}-${pub.title}`} className="list-none">
                     {/* <PublicationEntry
@@ -145,7 +143,7 @@ export default function Publications() {
                       title={pub.title}
                       citationHtml={buildCitationHtml(pub)}
                     /> */}
-                    { buildCitationHtmlAlternate(pub) }
+                    { buildCitationHtmlAlternate(pub, i > 0 ? pubs[i-1] : null) }
                   </li>
                 );
               })}
