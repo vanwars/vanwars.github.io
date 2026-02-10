@@ -386,28 +386,6 @@
             }
         }
     ],
-    "UC Berkeley - School of Information": [
-        {
-            "years": "2016 - 2018",
-            "code": "Info 206",
-            "title": "Distributed Computing Applications & Infrastructure",
-            "description": "An introduction to the fundamentals of data structures and data analysis (in Python) for Master's students.",
-            "sessions": {
-                "2012-2013": [
-                    {
-                        "period": "Spring",
-                        "notes": " (Graduate Teaching Assistant)"
-                    }
-                ],
-                "2013-2014": [
-                    {
-                        "period": "Summer",
-                        "notes": " (Lecturer)"
-                    }
-                ]
-            }
-        }
-    ],
     "REALM Charter High School": [
         {
             "years": "2013 - 2014",
@@ -418,6 +396,28 @@
                     {
                         "period": "Spring",
                         "notes": "(with Sepehr Vakil and Tapan Parikh)"
+                    }
+                ]
+            }
+        }
+    ],
+    "UC Berkeley": [
+        {
+            "years": "2011 - 2013",
+            "code": "Info 206",
+            "title": "Distributed Computing Applications & Infrastructure",
+            "description": "An introduction to the fundamentals of data structures and data analysis (in Python) for Master's students.",
+            "sessions": {
+                "2013": [
+                    {
+                        "period": "Spring",
+                        "notes": " (Graduate Teaching Assistant)"
+                    }
+                ],
+                "2011": [
+                    {
+                        "period": "Summer",
+                        "notes": " (Lecturer)"
                     }
                 ]
             }

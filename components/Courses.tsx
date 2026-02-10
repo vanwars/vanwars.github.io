@@ -27,7 +27,7 @@ export default function Courses() {
     <section>
       {Object.entries(coursesData).map(([institution, courses]) => (
         <div key={institution} className="mb-8">
-          <h2 className="font-condensed text-[1.8em] text-blue border-b border-blue font-medium pb-[3px] mt-0 mb-[10px]">{institution}</h2>
+          <h2 className="heading2">{institution}</h2>
           {courses.map((course, idx) => (
             <CourseEntry key={idx} course={course} />
           ))}

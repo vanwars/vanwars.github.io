@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Delius&family=Itim&family=Mali&family=Sue+Ellen+Francisco&family=Open+Sans:wght@400;600;700&family=Open+Sans+Condensed:wght@300&family=Amatic+SC&family=Roboto&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Sue+Ellen+Francisco&display=swap');
 @import "tailwindcss";
 
 @theme {
+  /* --font-sans: "Inter", "Open Sans", sans-serif; */
   --font-sans: "Open Sans", sans-serif;
   --font-cursive: "Sue Ellen Francisco", cursive;
-  --font-condensed: "Open Sans Condensed", sans-serif;
-  
+  --heading-font: "Outfit", "Outfit Fallback", serif;
   --color-orange: #fe6003;
   --color-link-color: #205c76;
   --color-blue: #4f6d7a;
@@ -65,9 +65,25 @@
   }
 }
 
+.heading2 {
+  @apply text-[1.3em] font-bold pb-[3px] mt-6 mb-1 text-redpurple;
+  font-family: var(--heading-font);
+}
+
+.heading3 {
+    @apply text-[1.1em] mb-1;
+    font-family: var(--heading-font);
+    line-height: 1.5rem;
+}
+
 
 .pub-entry {
-    @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] max-md:grid-cols-1 mb-3;
+    @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] max-md:grid-cols-1 mb-4;
+}
+
+.pub-title {
+    line-height: 1.4rem;
+    /* margin-bottom: 12px; */
 }
 
 .citation {
@@ -93,6 +109,29 @@
     top: 13px;
     left: -28px;
     transform: rotate(33deg);
+  }
+  .poppies-bottom {
+    background-image: url('/images/poppies-bottom-right.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 267px;
+    height: 198px;
+    position: relative;
+    z-index: 1000;
+    bottom: 13px;
+    right: 0px;
+    transform: rotate(33deg);
+  }
+
+  @media (max-width: 768px) {
+    .poppies {
+      display: none !important;
+    }
+
+    .poppies {
+        background: none;
+      }
   }
 
   nav.mobile {

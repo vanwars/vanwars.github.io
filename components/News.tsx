@@ -24,7 +24,7 @@ export default function News() {
         {news.map((item, idx) => (
         <div key={idx} className={idx > 0 ? "mt-6" : ""}>
           <section>
-            <h2 className="m-0 text-base font-semibold uppercase text-black font-sans border-b-0">{item.title}</h2>
+            <h2 className="heading3">{item.title}</h2>
             <p className="font-semibold text-redpurple text-sm">{item.date}</p>
             <p className="m-0 text-sm text-gray-800" dangerouslySetInnerHTML={{ __html: item.description }} />
           </section>

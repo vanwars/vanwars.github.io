@@ -4,6 +4,7 @@ import Publications from "@/components/Publications";
 
 export default function Home() {
   return (
+    <>
     <main className="pt-10 min-h-[65vh] max-w-[800px] max-md:mx-4 md:max-w-[1000px] md:grid md:items-start md:grid-cols-[300px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
       <div className="hidden md:block">
         <News />
@@ -39,10 +40,12 @@ export default function Home() {
         <Publications />
 
         <h1 id="contact" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Contact</h1>
-        <section className="bg-[url(/images/poppies-bottom-right.png)] bg-[bottom_right] bg-no-repeat bg-[130px_170px] min-h-[200px]">
-          <p className="leading-[1.6em] text-[1.0em] mt-0">To contact me, please email me at svanwart@unca.edu.</p>
-        </section>
+            <p className="leading-[1.6em] text-[1.0em] mt-0">To contact me, please email me at svanwart@unca.edu.</p>
       </div>
     </main>
+    <div className="flex justify-end overflow-clip">
+         <section className="poppies-bottom"></section>
+    </div>
+    </>
   );
 }

@@ -6,6 +6,7 @@
         "title": "Digging Deeper into Schoolyards and Data: An elementary ecology unit to lift up children’s local knowledge",
         "venue": "Science and Children",
         "volume": 63,
+        "issue": "1",
         "pages": "53-64",
         "type": "journal",
         "doi": "https://doi.org/10.1080/00368148.2025.2586296"
@@ -26,7 +27,7 @@
         "date": "2023, June 10-15",
         "year": "2023",
         "title": "“Accessibility is important to everybody”: Unpacking Students’ Understanding about Accessibility",
-        "venue": "Proceedings of the International Society of the Learning Sciences (ISLS)",
+        "venue": "International Society of the Learning Sciences (ISLS)",
         "location": "Montréal, CA",
         "type": "conference",
         "url": "https://repository.isls.org/handle/1/9951"
@@ -46,7 +47,7 @@
         "date": "2019",
         "year": "2019",
         "type": "conference",
-        "venue": "Proceedings of Computer Supported Collaborative Learning (CSCL)",
+        "venue": "Computer Supported Collaborative Learning (CSCL)",
         "url": "https://ris.utwente.nl/ws/portalfiles/portal/129957345/CSCL_2019_Volume_2.pdf#page=39",
         "pages": "pp. 553–556",
         "location": "Lyon, FR"
@@ -57,8 +58,8 @@
         "date": "2016",
         "year": "2016",
         "type": "conference",
-        "venue": "Proceedings of the International Conference of the Learning Sciences (ICLS)",
-        "pages": "Vol. 1, pp. 570–577",
+        "venue": "International Conference of the Learning Sciences (ICLS)",
+        "pages": "Vol. 1, pp. 570-577",
         "location": "Singapore"
     },
     {
@@ -67,8 +68,8 @@
         "date": "2014",
         "year": "2014",
         "type": "conference",
-        "venue": "Proceedings of the Conference on Innovation & Technology in Computer Science Education (ITiCSE)",
-        "pages": "123–128",
+        "venue": "Innovation & Technology in Computer Science Education (ITiCSE)",
+        "pages": "123-128",
         "location": "Uppsala, SE",
         "doi": "https://dl.acm.org/doi/10.1145/2591708.2591751"
     },
@@ -78,8 +79,8 @@
         "date": "2010",
         "year": "2010",
         "type": "conference",
-        "venue": "Proceedings of the First ACM Symposium on Computing for Development (ACMDEV)",
-        "pages": "123–128",
+        "venue": "ACM Symposium on Computing for Development (ACMDEV)",
+        "pages": "123-128",
         "location": "Egham, UK",
         "doi": "https://doi.org/10.1145/1926180.1926194"
     },
@@ -89,7 +90,7 @@
         "date": "2024",
         "year": "2024",
         "type": "workshop",
-        "venue": "Roundtable session presented at the Annual Meeting of the American Educational Research Association (AERA)",
+        "venue": "Annual Meeting of the American Educational Research Association (AERA)",
         "location": "Philadelphia, PA"
     },
     {
@@ -100,16 +101,16 @@
         "date": "2023",
         "year": "2023",
         "type": "symposium",
-        "venue": "Annual Meeting of the American Educational Research Association (AERA)",
+        "venue": "American Educational Research Association (AERA)",
         "location": "Chicago, IL"
     },
     {
-        "title": "“Google got yo’ life”: Opening Portals for Ethical Sensemaking with Relational Design",
+        "title": "“Google got yo' life”: Opening Portals for Ethical Sensemaking with Relational Design",
         "authors": "araujo melo, n., Reith, A., Nober, B., Van Wart, S.J., & Vakil, S.",
         "date": "2022",
         "year": "2022",
         "type": "workshop",
-        "venue": "Workshop paper presented at the Annual Meeting of the American Educational Research Association (AERA)",
+        "venue": "Annual Meeting of the American Educational Research Association (AERA)",
         "location": "San Diego, CA"
     },
     {
@@ -118,7 +119,7 @@
         "date": "7-30 July 2021",
         "year": "2021",
         "type": "workshop",
-        "venue": "Workshop paper presented at the Connected Learning Summit",
+        "venue": "Connected Learning Summit",
         "location": "Online"
     },
     {
@@ -127,9 +128,9 @@
         "date": "21-23 July, 2020",
         "year": "2020",
         "type": "workshop",
-        "venue": "Workshop paper presented during the 14th International Conference of the Learning Sciences",
+        "venue": "International Conference of the Learning Sciences",
         "location": "Nashville, TN",
-        "pages": "Vol. 1, pp. 406–413",
+        "pages": "Vol. 1, pp. 406-413",
         "doi": "https://doi.dx.org/10.22318/icls2020.406"
     },
     {
@@ -138,7 +139,7 @@
         "date": "21-23 July, 2020",
         "year": "2020",
         "type": "workshop",
-        "venue": "Workshop paper presented during the 14th International Conference of the Learning Sciences",
+        "venue": "International Conference of the Learning Sciences",
         "location": "Nashville, TN",
         "pages": "Vol. 1, pp. 343–349",
         "doi": "https://doi.dx.org/10.22318/icls2020.343"
@@ -149,7 +150,7 @@
         "date": "2016",
         "year": "2016",
         "type": "workshop",
-        "venue": "Poster Session Presented at the Annual Meeting of the American Educational Research Association (AERA)",
+        "venue": "Annual Meeting of the American Educational Research Association (AERA)",
         "location": " Washington, D.C."
     },
     {
@@ -158,7 +159,7 @@
         "date": "2015",
         "year": "2015",
         "type": "workshop",
-        "venue": "Proceedings of the Eleventh Annual International Conference on International Computing Education Research (ICER)",
+        "venue": "International Conference on International Computing Education Research (ICER)",
         "location": "Omaha, NE",
         "pages": "281-282",
         "doi": "https://dl.acm.org/doi/10.1145/2787622.2787751"
@@ -169,7 +170,7 @@
         "date": "2014",
         "year": "2014",
         "type": "poster",
-        "venue": "Poster at the International Conference of the Learning Sciences (ICLS)",
+        "venue": "International Conference of the Learning Sciences (ICLS)",
         "location": "Boulder, CO",
         "pages": "1589-1590"
     },
@@ -179,7 +180,7 @@
         "date": "2013",
         "year": "2013",
         "type": "workshop",
-        "venue": "Paper Presented at the Geographic Human-Computer Interaction (GeoHCI) Workshop at SIGCHI",
+        "venue": "Geographic Human-Computer Interaction (GeoHCI) Workshop at SIGCHI",
         "location": "Paris, FR",
         "pages": "1-3",
         "url": "https://www-users.cs.umn.edu/~bhecht/geohci2013ps/GeoHCI2013_Proceedings.pdf"
@@ -191,7 +192,7 @@
         "date": "2020",
         "year": "2020",
         "type": "book chapter",
-        "book": "Popular Culture and the Civic Imagination: Case Studies of Creative Social Change",
+        "venue": "Popular Culture and the Civic Imagination: Case Studies of Creative Social Change",
         "published": "NYU Press",
         "pages": "89-99",
         "url": "https://nyupress.org/9781479869503/popular-culture-and-the-civic-imagination/"
