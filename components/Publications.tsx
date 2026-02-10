@@ -104,7 +104,7 @@ const buildCitationHtmlAlternate = (item: Publication) => {
             <span className={`max-md:hidden text-base text-right transition-all duration-200 ${url ? 'group-hover:text-redpurple group-hover:pr-4' : ''}`}>{item.year}</span>
         </div>
         {/* Authors and venue */}
-        <div className="mt-1 text-base grid grid-cols-[1fr_60px] gap-x-8 max-md:grid-cols-1 text-[0.85rem] max-md:text-lg leading-4 max-md:leading-6" style={{ color: '#777' }}>
+        <div className="mt-1 text-base grid grid-cols-[1fr_60px] gap-x-8 max-md:grid-cols-1 text-[0.9rem] max-md:text-lg leading-4 max-md:leading-6" style={{ color: '#777' }}>
             <div>
             { item.authors && <div>{item.authors}</div> }
             {
