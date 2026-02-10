@@ -34,11 +34,11 @@ const toLinks = (courses: CourseSession[]) => {
 };
 
 const toTable = (sessions: Record<string, CourseSession[]>) => {
-  let html = '<table>';
+  let html = '<table class="mr-32">';
   for (const key in sessions) {
     const currentSession = sessions[key];
     html += `<tr>
-      <th class="text-left pr-4 font-semibold text-[1.0rem] max-md:text-[1.125rem]">${key}</th>
+      <th class="text-left pr-4 font-semibold text-[1.0rem] w-24 align-top max-md:text-[1.125rem]">${key}</th>
       <td class="text-[1.0rem] max-md:text-[1.125rem]">${toLinks(currentSession)}</td>
     </tr>`;
   }
@@ -83,7 +83,7 @@ export default function CourseEntry({ course }: CourseEntryProps) {
         aria-expanded={isExpanded}
         aria-label={isExpanded ? 'Collapse course details' : 'Expand course details'}
       >
-        <h3 className={`text-base max-md:text-lg m-0 inline-flex items-center transition-all duration-300 ${isExpanded ? 'font-semibold mb-2' : 'font-normal'}`}>
+        <h3 className={`text-base max-md:text-lg m-0 inline-flex items-center transition-all duration-300 ${isExpanded ? 'font-semibold' : 'font-normal'}`}>
           <span className={`mr-2 flex items-center transition-transform duration-300 ${isExpanded ? 'rotate-0' : ''}`}>
             {isExpanded ? <ChevronDown /> : <ChevronRight />}
           </span>
@@ -92,11 +92,11 @@ export default function CourseEntry({ course }: CourseEntryProps) {
         <p className={`m-0 text-base max-md:text-lg text-right max-md:hidden transition-all duration-300 ${isExpanded ? 'font-semibold' : 'font-normal'}`}>{course.years}</p>
       </button>
       <div 
-        className={`ml-2 pl-2 border-l-2 border-redpurple/60 overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`ml-2 pl-4 overflow-hidden transition-all duration-300 ease-in-out ${
           isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0 mt-0'
         }`}
       >
-        <p className="text-base max-md:text-lg leading-[1.4em] mb-[10px]">{course.description}</p>
+        <p className="text-[1rem] max-md:text-lg leading-[1.4em] mb-[10px] pr-32">{course.description}</p>
         <div className="teaching" dangerouslySetInnerHTML={{ __html: toTable(course.sessions) }} />
       </div>
     </section>

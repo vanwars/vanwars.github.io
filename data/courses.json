@@ -312,15 +312,13 @@
                     },
                     {
                         "period": "Spring",
-                        "url": "https://cs396-web-dev.github.io/spring2022/",
-                        "notes": "(with design help from Victoria Chavéz)"
+                        "url": "https://cs396-web-dev.github.io/spring2022/"
                     }
                 ],
                 "2020-2021": [
                     {
                         "period": "Spring",
-                        "url": "https://cs396-web-dev.github.io/spring2021/",
-                        "notes": "(with design help from Cooper Barth & Linus Okoth)"
+                        "url": "https://cs396-web-dev.github.io/spring2021/"
                     }
                 ]
             }
