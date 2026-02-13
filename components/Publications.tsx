@@ -118,8 +118,11 @@ export default function Publications() {
   const publications = getPublications();
 
   const groupings = {
-    'Peer-Reviewed Publications': [
-      'journal', 'conference', 'workshop', 'symposium', 'poster'
+    'Peer-Reviewed Journal Articles and Conference Proceedings': [
+      'journal', 'conference'
+    ],
+    'Peer-Reviewed Workshop Papers and Posters': [
+      'workshop', 'symposium', 'poster'
     ],
     'Other Publications': ['book chapter', 'magazine', 'dissertation'],
   };

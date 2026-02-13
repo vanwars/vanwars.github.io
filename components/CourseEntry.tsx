@@ -34,11 +34,11 @@ const toLinks = (courses: CourseSession[]) => {
 };
 
 const toTable = (sessions: Record<string, CourseSession[]>) => {
-  let html = '<table class="mr-32">';
+  let html = '<table class="md:mr-32">';
   for (const key in sessions) {
     const currentSession = sessions[key];
     html += `<tr>
-      <th class="text-left pr-4 font-semibold text-[1.0rem] w-24 align-top max-md:text-[1.125rem]">${key}</th>
+      <th class="text-left pr-4 font-semibold text-[1.0rem] min-w-[110px] w-24 align-top max-md:text-[1.125rem]">${key}</th>
       <td class="text-[1.0rem] max-md:text-[1.125rem]">${toLinks(currentSession)}</td>
     </tr>`;
   }
