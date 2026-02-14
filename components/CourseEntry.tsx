@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface CourseSession {
   period: string;
@@ -18,6 +18,8 @@ interface Course {
 
 interface CourseEntryProps {
   course: Course;
+  isExpanded?: boolean;
+  onToggle?: () => void;
 }
 
 const toLinks = (courses: CourseSession[]) => {
@@ -72,14 +74,31 @@ const ChevronDown = () => (
   </svg>
 );
 
-export default function CourseEntry({ course }: CourseEntryProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+export default function CourseEntry({ course, isExpanded: controlledIsExpanded, onToggle }: CourseEntryProps) {
+  const [internalIsExpanded, setInternalIsExpanded] = useState(false);
+  
+  // Sync internal state with controlled prop when it changes
+  useEffect(() => {
+    if (controlledIsExpanded !== undefined) {
+      setInternalIsExpanded(controlledIsExpanded);
+    }
+  }, [controlledIsExpanded]);
+  
+  // Always use internal state for display
+  const isExpanded = internalIsExpanded;
+  
+  const handleToggle = () => {
+    if (onToggle) {
+      onToggle();
+    }
+    setInternalIsExpanded(!internalIsExpanded);
+  };
 
   return (
     <section className={`transition-all duration-300 ease-in-out px-2 pt-0 ${isExpanded ? 'rounded-lg pb-4 mb-6' : ''}`}>
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="text-left w-full transition-all duration-200 hover:bg-blue/5 hover:text-redpurple hover:rounded-md hover:px-2 hover:-mx-2 grid grid-cols-[auto_100px] max-md:grid-cols-1 items-start py-1 -my-1"
+        onClick={handleToggle}
+        className={`text-left w-full transition-all duration-200 hover:bg-blue/5 hover:text-redpurple hover:rounded-md hover:px-2 hover:-mx-2 grid grid-cols-[auto_100px] max-md:grid-cols-1 items-start py-1 -my-1 ${isExpanded ? 'mt-2' : ''}`}
         aria-expanded={isExpanded}
         aria-label={isExpanded ? 'Collapse course details' : 'Expand course details'}
       >

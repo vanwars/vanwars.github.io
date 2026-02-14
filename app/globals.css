@@ -11,6 +11,9 @@
   --color-blue: #4f6d7a;
   --color-bluegreen: #315659;
   --color-redpurple: #e91e63;
+  --color-redpurple-light: #f56d9b;
+  --color-redpurple-dark: #c01447;
+  --color-redpurple-darkest: #960b30;
   --color-background: #FFFFF7;
   --color-border: #e8dab2;
   --color-eggplant: #754f5b;
@@ -69,6 +72,11 @@
   @apply text-[1.3em] font-bold pb-[3px] mt-6 mb-1 text-redpurple;
   font-family: var(--heading-font);
 }
+
+.heading2-expandable {
+    @apply text-[1.3em] font-bold text-redpurple;
+    font-family: var(--heading-font);
+  }
 
 .heading3 {
     @apply text-[1.1em] mb-1;
