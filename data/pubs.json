@@ -18,6 +18,7 @@
         "title": "Participatory Digital Mapping, Dynamic Data and Children's Emergent Science Argumentation about Local Socio-Ecological Systems",
         "venue": "Journal of Science Education and Technology",
         "volume": 34,
+        "issue": "2",
         "pages": "215-235",
         "type": "journal",
         "doi": "https://doi.org/10.1007/s10956-024-10152-6"
@@ -29,6 +30,7 @@
         "title": "“Accessibility is important to everybody”: Unpacking Students’ Understanding about Accessibility",
         "venue": "International Society of the Learning Sciences (ISLS)",
         "location": "Montréal, CA",
+        "prefix": "Proceedings of the 17th ",
         "type": "conference",
         "url": "https://repository.isls.org/handle/1/9951"
     },
@@ -38,6 +40,9 @@
         "date": "2020",
         "year": "2020",
         "type": "journal",
+        "volume": 29,
+        "issue": "1",
+        "pages": "127-153",
         "venue": "Journal of the Learning Sciences",
         "doi": "https://doi.org/10.1080/10508406.2019.1693378"
     },
@@ -48,6 +53,7 @@
         "year": "2019",
         "type": "conference",
         "venue": "Computer Supported Collaborative Learning (CSCL)",
+        "prefix": "Proceedings of the conference on ",
         "url": "https://ris.utwente.nl/ws/portalfiles/portal/129957345/CSCL_2019_Volume_2.pdf#page=39",
         "pages": "pp. 553–556",
         "location": "Lyon, FR"
@@ -58,6 +64,7 @@
         "date": "2016",
         "year": "2016",
         "type": "conference",
+        "prefix": "Proceedings of the conference on ",
         "venue": "International Conference of the Learning Sciences (ICLS)",
         "pages": "Vol. 1, pp. 570-577",
         "location": "Singapore"
@@ -69,6 +76,7 @@
         "year": "2014",
         "type": "conference",
         "venue": "Innovation & Technology in Computer Science Education (ITiCSE)",
+        "prefix": "Proceedings of the conference on ",
         "pages": "123-128",
         "location": "Uppsala, SE",
         "doi": "https://dl.acm.org/doi/10.1145/2591708.2591751"
@@ -79,6 +87,7 @@
         "date": "2010",
         "year": "2010",
         "type": "conference",
+        "prefix": "Proceedings of the First ",
         "venue": "ACM Symposium on Computing for Development (ACMDEV)",
         "pages": "123-128",
         "location": "Egham, UK",

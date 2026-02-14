@@ -8,6 +8,7 @@ interface Publication {
   year: string;
   title: string;
   venue?: string;
+  prefix?: string;
   volume?: number | string;
   issue?: string;
   pages?: string;
@@ -35,7 +36,7 @@ const getTitle = (item: Publication) => {
 };
 
 const getVenue = (item: Publication) => {
-  let html = item.venue ? `<em>${item.venue}</em>` : '';
+  let html = item.venue ? `<em>${item.prefix ? `${item.prefix} ` : ''}  ${item.venue}</em>` : '';
   if (item.volume) {
     html += `<em>, ${item.volume}</em>`;
   }
@@ -86,7 +87,7 @@ const buildCitationHtmlAlternate = (item: Publication, prevItem: Publication | n
   const volumePart = item.volume ? ` ${item.volume}` : '';
   const issuePart = item.issue ? ` (${item.issue})` : '';
   const pagesPart = item.pages ? `, ${item.pages}` : '';
-  const venueText =  [venuePart, volumePart, issuePart, pagesPart].filter(part => part).join('')
+  const venueText =  [item.prefix ? `${item.prefix} ` : '', venuePart, volumePart, issuePart, pagesPart].filter(part => part).join('')
   const url = item.url || item.doi;
   return (
     <div className="mb-7 pr-4">
