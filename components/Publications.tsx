@@ -88,7 +88,8 @@ const buildCitationHtmlAlternate = (item: Publication, prevItem: Publication | n
   const issuePart = item.issue ? ` (${item.issue})` : '';
   const pagesPart = item.pages ? `, ${item.pages}` : '';
   const venueText =  [item.prefix ? `${item.prefix} ` : '', venuePart, volumePart, issuePart, pagesPart].filter(part => part).join('')
-  const url = item.url || item.doi;
+  const url = item.url;
+  const doi = item.doi;
   return (
     <div className="mb-7 pr-4">
         {/* Title and year */}
@@ -103,12 +104,10 @@ const buildCitationHtmlAlternate = (item: Publication, prevItem: Publication | n
             <span className={`max-md:hidden text-base text-right transition-all duration-200 ${url ? 'group-hover:text-redpurple group-hover:pr-4' : ''}`}>{!prevItem || item.year !== prevItem.year ? item.year : ''}</span>
         </div>
         {/* Authors and venue */}
-        <div className="mt-1 text-base grid grid-cols-[1fr_60px] gap-x-8 max-md:grid-cols-1 text-[0.9rem] max-md:text-lg leading-4 max-md:leading-6" style={{ color: '#777' }}>
-            <div>
+        <div className="mt-1 gap-y-1 text-base grid grid-cols-[1fr_60px] gap-x-8 max-md:grid-cols-1 text-[0.9rem] max-md:text-lg leading-4 max-md:leading-6" style={{ color: '#777' }}>
+            <div className="flex flex-col gap-y-1">
             { item.authors && <div>{item.authors}</div> }
-            {
-                venueText && <div>{venueText}</div> 
-            }
+            { venueText && <div>{venueText}</div>  }
             </div>
         </div>    
     </div>

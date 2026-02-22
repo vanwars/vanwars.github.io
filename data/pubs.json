@@ -9,7 +9,8 @@
         "issue": "1",
         "pages": "53-64",
         "type": "journal",
-        "doi": "https://doi.org/10.1080/00368148.2025.2586296"
+        "doi": "https://doi.org/10.1080/00368148.2025.2586296",
+        "url": "/docs/lanouette-vanwart-2026-science-and-children.pdf"
     },
     {
         "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S.",
@@ -21,7 +22,8 @@
         "issue": "2",
         "pages": "215-235",
         "type": "journal",
-        "doi": "https://doi.org/10.1007/s10956-024-10152-6"
+        "doi": "https://doi.org/10.1007/s10956-024-10152-6",
+        "url": "/docs/jest-2024.pdf"
     },
     {
         "authors": "Chávez, V. & Van Wart, S.J.",
@@ -32,7 +34,8 @@
         "location": "Montréal, CA",
         "prefix": "Proceedings of the 17th ",
         "type": "conference",
-        "url": "https://repository.isls.org/handle/1/9951"
+        "doi": "https://doi.org/10.22318/icls2023.262420",
+        "url": "/docs/ICLS2023_accessibility.pdf"
     },
     {
         "title": "Scripts and counterscripts in community-based data science: Participatory digital mapping and the pursuit of a third space",
@@ -44,7 +47,8 @@
         "issue": "1",
         "pages": "127-153",
         "venue": "Journal of the Learning Sciences",
-        "doi": "https://doi.org/10.1080/10508406.2019.1693378"
+        "doi": "https://doi.org/10.1080/10508406.2019.1693378",
+        "url": "/docs/jls-2020.pdf"
     },
     {
         "title": "Moving Between Experience, Data and Explanation: The Role of Participatory GIS Maps in Elementary Science Sensemaking",
@@ -55,7 +59,7 @@
         "venue": "Computer Supported Collaborative Learning (CSCL)",
         "prefix": "Proceedings of the conference on ",
         "url": "https://ris.utwente.nl/ws/portalfiles/portal/129957345/CSCL_2019_Volume_2.pdf#page=39",
-        "pages": "pp. 553–556",
+        "pages": "pp. 553-556",
         "location": "Lyon, FR"
     },
     {
@@ -67,7 +71,8 @@
         "prefix": "Proceedings of the conference on ",
         "venue": "International Conference of the Learning Sciences (ICLS)",
         "pages": "Vol. 1, pp. 570-577",
-        "location": "Singapore"
+        "location": "Singapore",
+        "url": "/docs/ICLS2016.pdf"
     },
     {
         "title": "Apps for social justice: Motivating computer science learning with design and real-world problem solving",
@@ -79,7 +84,8 @@
         "prefix": "Proceedings of the conference on ",
         "pages": "123-128",
         "location": "Uppsala, SE",
-        "doi": "https://dl.acm.org/doi/10.1145/2591708.2591751"
+        "doi": "https://dl.acm.org/doi/10.1145/2591708.2591751",
+        "url": "/docs/iticse-2014-vanwart-et-al.pdf"
     },
     {
         "title": "Local Ground: A Paper-Based Toolkit for Documenting Local Geo-spatial Knowledge",
@@ -91,7 +97,8 @@
         "venue": "ACM Symposium on Computing for Development (ACMDEV)",
         "pages": "123-128",
         "location": "Egham, UK",
-        "doi": "https://doi.org/10.1145/1926180.1926194"
+        "doi": "https://doi.org/10.1145/1926180.1926194",
+        "url": "/docs/localground_dev10.pdf"
     },
     {
         "title": "Participatory Digital Mapping, Dynamic Data, and Children's Science Argumentation: Possibilities in Elementary Science Ecology Studies",
