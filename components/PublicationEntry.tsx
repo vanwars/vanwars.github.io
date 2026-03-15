@@ -1,11 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+interface CitationAlternateData {
+  authors?: string;
+  venue?: string;
+  prefix?: string;
+  volume?: number | string;
+  issue?: string;
+  pages?: string;
+  url?: string;
+  doi?: string;
+}
 
 interface PublicationEntryProps {
   year: string;
   title: string;
-  citationHtml: string;
+  citationAlternate: CitationAlternateData;
+  /** When set, the group heading controls whether details can show; this entry still has its own expand/collapse. */
+  groupExpanded?: boolean;
 }
 
 const ChevronRight = () => (
@@ -34,25 +47,82 @@ const ChevronDown = () => (
   </svg>
 );
 
+function buildCitationHtmlAlternate(data: CitationAlternateData) {
+  const { authors, venue, prefix, volume, issue, pages, url, doi } = data;
+  const linkHref = url || (doi ? (doi.startsWith('http') ? doi : `https://doi.org/${doi}`) : undefined);
+  const linkText = doi || "link";
+  const venuePart = venue ? `${venue}` : '';
+  const volumePart = volume ? ` ${volume}` : '';
+  const issuePart = issue ? ` (${issue})` : '';
+  const pagesPart = pages ? `, ${pages}` : '';
+  const venueText = [prefix ? `${prefix} ` : '', venuePart, volumePart, issuePart, pagesPart]
+    .filter((part) => part)
+    .join('');
+  return (
+    <div className="mb-2 pr-4">
+      {/* Authors and venue */}
+      <div
+        className="mt-1 gap-y-1 text-base grid grid-cols-[1fr_60px] gap-x-8 text-[0.9rem] leading-4"
+        style={{ color: '#777' }}
+      >
+        <div className="flex flex-col gap-y-1">
+          {authors && <div>{authors}</div>}
+          {venueText && <div>{venueText}</div>}
+          {linkHref && linkText && (
+            <div>
+              <a href={linkHref} target="_blank" rel="noopener noreferrer">
+                {linkText}
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function PublicationEntry({
   year,
   title,
-  citationHtml,
+  citationAlternate,
+  groupExpanded,
 }: PublicationEntryProps) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [entryCollapsed, setEntryCollapsed] = useState(false);
+  const [entryExpanded, setEntryExpanded] = useState(false);
+
+  useEffect(() => {
+    if (groupExpanded === undefined) return;
+    if (groupExpanded) {
+      setEntryExpanded(false);
+    } else {
+      setEntryCollapsed(false);
+    }
+  }, [groupExpanded]);
+
+  const canShowDetails = groupExpanded === undefined ? true : groupExpanded;
+  const isExpanded =
+    groupExpanded === false ? entryExpanded : !entryCollapsed;
+
+  const handleToggle = () => {
+    if (groupExpanded === false) {
+      setEntryExpanded((e) => !e);
+    } else {
+      setEntryCollapsed((c) => !c);
+    }
+  };
 
   return (
     <section
-      className={`transition-all duration-300 ease-in-out px-2 pt-0 mb-4 ${isExpanded ? 'rounded-lg pb-4' : ''}`}
+      className={`transition-all duration-300 ease-in-out px-2 pt-0 mb-2 ${isExpanded ? 'pt-2' : ''}`}
     >
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="text-left w-full transition-all duration-200 hover:bg-blue/5 hover:text-redpurple hover:rounded-md hover:px-2 hover:-mx-2 grid grid-cols-[1fr_80px] max-md:grid-cols-1 items-start py-1 -my-1"
+        onClick={handleToggle}
+        className="text-left w-full transition-all duration-200 hover:text-redpurple hover:px-2 hover:-mx-2 grid grid-cols-[1fr_80px] items-start py-1 -my-1"
         aria-expanded={isExpanded}
         aria-label={isExpanded ? 'Collapse publication details' : 'Expand publication details'}
       >
         <h3
-          className={`text-blue-600 text-base max-md:text-lg m-0 flex items-start gap-2 transition-all duration-300 ${
+          className={`text-base max-md:text-lg m-0 min-w-0 flex items-start gap-2 transition-all duration-300 ${
             isExpanded ? 'font-normal' : 'font-normal'
           }`}
         >
@@ -76,10 +146,7 @@ export default function PublicationEntry({
           isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0 mt-0'
         }`}
       >
-        <p
-          className="text-[0.9rem] text-gray-700 line-height-[1.3rem]"
-          dangerouslySetInnerHTML={{ __html: citationHtml }}
-        />
+        {buildCitationHtmlAlternate(citationAlternate)}
       </div>
     </section>
   );

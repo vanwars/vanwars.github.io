@@ -42,7 +42,7 @@ export default function CoursesClient({ coursesData }: CoursesClientProps) {
         const isInstitutionExpanded = expandedInstitutions.has(institution);
         return (
           <div key={institution} className="mb-8">
-            <div className="flex gap items-center mb-1 mt-6">
+            <div className="flex  gap-x-2 items-center mb-1 mt-6">
               <h2 className="heading2-expandable">{institution}</h2>
               <button
                 onClick={() => toggleInstitution(institution)}

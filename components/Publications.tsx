@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import PublicationEntry from './PublicationEntry';
+import PublicationsClient from './PublicationsClient';
 
 interface Publication {
   authors?: string;
@@ -118,42 +118,14 @@ export default function Publications() {
   const publications = getPublications();
 
   const groupings = {
-    'Peer-Reviewed Journal Articles and Conference Proceedings': [
+    'Peer-Reviewed Journal Articles & Conference Proceedings': [
       'journal', 'conference'
     ],
-    'Peer-Reviewed Workshop Papers and Posters': [
+    'Peer-Reviewed Workshop Papers & Posters': [
       'workshop', 'symposium', 'poster'
     ],
     'Other Publications': ['book chapter', 'magazine', 'dissertation'],
   };
 
-  return (
-    <section>
-      {Object.entries(groupings).map(([groupName, types]) => {
-        const pubs = publications
-          .filter((pub) => types.includes(pub.type))
-          .sort((a, b) => parseInt(b.year) - parseInt(a.year));
-        
-        return (
-          <div key={groupName} className="mb-10">
-            <h2 className="heading2">{groupName}</h2>
-            <ul className="m-0 p-0 mb-10">
-              {pubs.map((pub, i) => {
-                return (
-                  <li key={`${pub.year}-${pub.title}`} className="list-none">
-                    {/* <PublicationEntry
-                      year={pub.year}
-                      title={pub.title}
-                      citationHtml={buildCitationHtml(pub)}
-                    /> */}
-                    { buildCitationHtmlAlternate(pub, i > 0 ? pubs[i-1] : null) }
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        );
-      })}
-    </section>
-  );
+  return <PublicationsClient publications={publications} groupings={groupings} />;
 }

@@ -86,7 +86,7 @@
 
 
 .pub-entry {
-    @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] max-md:grid-cols-1 mb-4;
+    @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] mb-4;
 }
 
 .pub-title {
