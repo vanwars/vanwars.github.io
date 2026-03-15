@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { ChevronDown, ChevronRight } from './Chevron';
 
 interface CourseSession {
   period: string;
@@ -47,32 +48,6 @@ const toTable = (sessions: Record<string, CourseSession[]>) => {
   html += '</table>';
   return html;
 };
-
-const ChevronRight = () => (
-  <svg
-    className="inline-block w-4 h-4 text-blue"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-  </svg>
-);
-
-const ChevronDown = () => (
-  <svg
-    className="inline-block w-4 h-4 text-blue"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-  </svg>
-);
 
 export default function CourseEntry({ course, isExpanded: controlledIsExpanded, onToggle }: CourseEntryProps) {
   const [internalIsExpanded, setInternalIsExpanded] = useState(false);

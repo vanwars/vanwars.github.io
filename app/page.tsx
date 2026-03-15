@@ -1,8 +1,12 @@
 import News from "@/components/News";
 import Courses from "@/components/Courses";
 import Publications from "@/components/Publications";
+import { getCourses } from "@/lib/courses";
+import { getPublications, PUBLICATION_GROUPINGS } from "@/lib/publications";
 
 export default function Home() {
+  const coursesData = getCourses();
+  const publications = getPublications();
   return (
     <>
     <main className="pt-10 min-h-[65vh] max-w-[800px] max-md:mx-4 md:max-w-[1000px] md:grid md:items-start md:grid-cols-[260px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
@@ -34,10 +38,10 @@ export default function Home() {
         </p>
 
         <h1 id="teaching" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Teaching & Course Design</h1>
-        <Courses />
+        <Courses coursesData={coursesData} />
 
         <h1 id="publications" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Scholarship</h1>
-        <Publications />
+        <Publications publications={publications} groupings={PUBLICATION_GROUPINGS} />
 
         <h1 id="contact" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Contact</h1>
             <p className="leading-[1.6em] text-[1.0em] mt-0">To contact me, please email me at svanwart@unca.edu.</p>

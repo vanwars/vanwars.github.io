@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ChevronDown, ChevronRight } from './Chevron';
 
 interface CitationAlternateData {
   authors?: string;
@@ -20,32 +21,6 @@ interface PublicationEntryProps {
   /** When set, the group heading controls whether details can show; this entry still has its own expand/collapse. */
   groupExpanded?: boolean;
 }
-
-const ChevronRight = () => (
-  <svg
-    className="inline-block w-4 h-4 text-blue"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-  </svg>
-);
-
-const ChevronDown = () => (
-  <svg
-    className="inline-block w-4 h-4 text-blue"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-  </svg>
-);
 
 function buildCitationHtmlAlternate(data: CitationAlternateData) {
   const { authors, venue, prefix, volume, issue, pages, url, doi } = data;
