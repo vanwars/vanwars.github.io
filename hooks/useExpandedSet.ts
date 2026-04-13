@@ -1,6 +1,15 @@
 import { useState } from 'react';
 
-export function useExpandedSet(initial?: Set<string>): [Set<string>, (key: string) => void] {
+export interface UseExpandedSetResult {
+  expanded: Set<string>;
+  toggle: (key: string) => void;
+  /** Replace expanded set with exactly these keys (one state update). */
+  expandAll: (keys: string[]) => void;
+  /** Clear the set (one state update). */
+  collapseAll: () => void;
+}
+
+export function useExpandedSet(initial?: Set<string>): UseExpandedSetResult {
   const [expanded, setExpanded] = useState<Set<string>>(initial ?? new Set());
 
   const toggle = (key: string) => {
@@ -12,5 +21,13 @@ export function useExpandedSet(initial?: Set<string>): [Set<string>, (key: strin
     });
   };
 
-  return [expanded, toggle];
+  const expandAll = (keys: string[]) => {
+    setExpanded(new Set(keys));
+  };
+
+  const collapseAll = () => {
+    setExpanded(new Set());
+  };
+
+  return { expanded, toggle, expandAll, collapseAll };
 }

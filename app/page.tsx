@@ -37,10 +37,8 @@ export default function Home() {
           city and regional development projects.
         </p>
 
-        <h1 id="teaching" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Teaching & Course Design</h1>
         <Courses coursesData={coursesData} />
 
-        <h1 id="publications" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Scholarship</h1>
         <Publications publications={publications} groupings={PUBLICATION_GROUPINGS} />
 
         <h1 id="contact" className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 pt-[60px] -mt-[30px]">Contact</h1>

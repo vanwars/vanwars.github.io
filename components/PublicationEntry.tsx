@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, ChevronRight } from './Chevron';
 
-interface CitationAlternateData {
+interface CitationData {
   authors?: string;
   venue?: string;
   prefix?: string;
@@ -12,18 +12,17 @@ interface CitationAlternateData {
   pages?: string;
   url?: string;
   doi?: string;
+  year?: string;
+  title?: string;
 }
 
 interface PublicationEntryProps {
-  year: string;
-  title: string;
-  citationAlternate: CitationAlternateData;
-  /** When set, the group heading controls whether details can show; this entry still has its own expand/collapse. */
+  citation: CitationData;
   groupExpanded?: boolean;
 }
 
-function buildCitationHtmlAlternate(data: CitationAlternateData) {
-  const { authors, venue, prefix, volume, issue, pages, url, doi } = data;
+function buildCitationHtmlAlternate(citation: CitationData) {
+  const { authors, venue, prefix, volume, issue, pages, url, doi } = citation;
   const linkHref = url || (doi ? (doi.startsWith('http') ? doi : `https://doi.org/${doi}`) : undefined);
   const linkText = doi || "link";
   const venuePart = venue ? `${venue}` : '';
@@ -57,9 +56,7 @@ function buildCitationHtmlAlternate(data: CitationAlternateData) {
 }
 
 export default function PublicationEntry({
-  year,
-  title,
-  citationAlternate,
+  citation,
   groupExpanded,
 }: PublicationEntryProps) {
   const [entryCollapsed, setEntryCollapsed] = useState(false);
@@ -74,7 +71,6 @@ export default function PublicationEntry({
     }
   }, [groupExpanded]);
 
-  const canShowDetails = groupExpanded === undefined ? true : groupExpanded;
   const isExpanded =
     groupExpanded === false ? entryExpanded : !entryCollapsed;
 
@@ -108,12 +104,12 @@ export default function PublicationEntry({
           >
             {isExpanded ? <ChevronDown /> : <ChevronRight />}
           </span>
-          <span className="pub-title">{title}</span>
+          <span className="pub-title">{citation.title}</span>
         </h3>
         <p
           className={`m-0 text-base max-md:text-lg text-right transition-all duration-300 ${isExpanded ? 'font-semibold' : 'font-normal'}`}
         >
-          {year}
+          {citation.year}
         </p>
       </button>
       <div
@@ -121,7 +117,7 @@ export default function PublicationEntry({
           isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0 mt-0'
         }`}
       >
-        {buildCitationHtmlAlternate(citationAlternate)}
+        {buildCitationHtmlAlternate(citation)}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import type { Publication } from '@/lib/publications';
 import { useExpandedSet } from '@/hooks/useExpandedSet';
 import ExpandableSectionHeading from './ExpandableSectionHeading';
@@ -11,9 +12,34 @@ interface PublicationsProps {
 }
 
 export default function Publications({ publications, groupings }: PublicationsProps) {
-  const [expandedGroups, toggleGroup] = useExpandedSet();
-
+    const {
+        expanded: expandedGroups,
+        toggle: toggleGroup,
+        expandAll,
+        collapseAll,
+      } = useExpandedSet();
+      const [isExpandedAll, isSetExpandedAll] = useState(false);
+      const pubTitle = 'Scholarship';
+    
+      const handleToggle = () => {
+        const newIsExpandedAll = !isExpandedAll;
+        isSetExpandedAll(newIsExpandedAll);
+        if (newIsExpandedAll) {
+          expandAll(Object.keys(groupings));
+        } else {
+          collapseAll();
+        }
+      };
   return (
+    <div className="pt-[60px]">
+        <ExpandableSectionHeading
+                    title={pubTitle}
+                    isExpanded={isExpandedAll}
+                    onToggle={() => handleToggle() }
+                    ariaLabelExpand={`Expand ${pubTitle} courses`}
+                    ariaLabelCollapse={`Collapse ${pubTitle} courses`}
+                    headingLevel={1}
+        />
     <section>
       {Object.entries(groupings).map(([groupName, types]) => {
         const pubs = publications
@@ -34,18 +60,7 @@ export default function Publications({ publications, groupings }: PublicationsPr
               {pubs.map((pub) => (
                 <li key={`${pub.year}-${pub.title}`} className="list-none">
                   <PublicationEntry
-                    year={pub.year}
-                    title={pub.title}
-                    citationAlternate={{
-                      authors: pub.authors,
-                      venue: pub.venue,
-                      prefix: pub.prefix,
-                      volume: pub.volume,
-                      issue: pub.issue,
-                      pages: pub.pages,
-                      url: pub.url,
-                      doi: pub.doi,
-                    }}
+                    citation={{...pub}}
                     groupExpanded={isGroupExpanded}
                   />
                 </li>
@@ -55,5 +70,6 @@ export default function Publications({ publications, groupings }: PublicationsPr
         );
       })}
     </section>
+    </div>
   );
 }
