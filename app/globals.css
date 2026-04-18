@@ -22,6 +22,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Offset in-page anchors (#teaching, #scholarship, #contact) below the sticky nav (55px) */
+    /* scroll-padding-top: 3.5rem; */
   }
 
   body {

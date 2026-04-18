@@ -29,7 +29,7 @@ export default function Courses({ coursesData }: CoursesProps) {
     }
   };
   return (
-    <div className="pt-[60px]">
+    <div className="pt-[60px]" id="teaching">
         <ExpandableSectionHeading
                     title={pubTitle}
                     isExpanded={isExpandedAll}

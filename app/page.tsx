@@ -27,12 +27,10 @@ export default function Home() {
           initiatives.
         </p>
         <p className="leading-[1.6em]">
-          Prior to joining UNCA, I was an Assistant Professor of Instruction at
-          Northwestern University, where I co-directed the TREE Lab with Sepehr Vakil.
-          My Ph.D. is from the UC Berkeley{' '}
+        Prior to joining UNCA, I was an Assistant Professor of Instruction at Northwestern University. 
+        My Ph.D. is from the University of California, Berkeley{' '}
           <a href="https://www.ischool.berkeley.edu/">School of Information</a>, where I
-          was advised by Tapan Parikh, and worked with Kris Gutiérrez, Paul Duguid, and
-          Coye Cheshire. Before academia, I worked as a software designer/developer,
+          was advised by Tapan Parikh. Before academia, I worked as a software designer/developer,
           building data and communication systems to support public accountability for
           city and regional development projects.
         </p>

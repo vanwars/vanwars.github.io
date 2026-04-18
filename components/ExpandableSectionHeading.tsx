@@ -7,6 +7,7 @@ interface ExpandableSectionHeadingProps {
   ariaLabelExpand?: string;
   ariaLabelCollapse?: string;
   headingLevel?: number;
+  id?: string | null;
 }
 
 export default function ExpandableSectionHeading({
@@ -15,11 +16,12 @@ export default function ExpandableSectionHeading({
   onToggle,
   ariaLabelExpand = `Expand ${title}`,
   ariaLabelCollapse = `Collapse ${title}`,
-  headingLevel = 2
+  headingLevel = 2,
+  id = null
 }: ExpandableSectionHeadingProps) {
   return (
-    <div className="flex gap-x-2 items-center mb-1">
-      {headingLevel === 1 && <h1 className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0">{title}</h1>}
+    <div className="flex gap-x-2 items-center mb-1" id={id ? id : title.toLowerCase().replace(/ /g, '-')}>
+      {headingLevel === 1 && <h1 className="font-cursive text-[2.5em] max-md:text-[3em] text-black m-0 mt-heading pt-heading">{title}</h1>}
       {headingLevel === 2 && <h2 className="heading2-expandable">{title}</h2>}
       <button
         onClick={onToggle}

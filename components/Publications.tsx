@@ -31,7 +31,7 @@ export default function Publications({ publications, groupings }: PublicationsPr
         }
       };
   return (
-    <div className="pt-[60px]">
+    <div className="pt-[60px]" id="scholarship">
         <ExpandableSectionHeading
                     title={pubTitle}
                     isExpanded={isExpandedAll}
