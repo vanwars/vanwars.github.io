@@ -1,8 +1,13 @@
 [
     {
-      "title": "YW Tech Lab Project: The AUX",
+      "title": "Childcare Network of Evanston website launch",
+      "date": "4/1/2026",
+      "description": "I'm pleased to share that our team at the Tapestri Tech Collective (continuation of the YW Tech Lab) recently launched a redesigned website for the <a href=\"https://childcarenetworkofevanston.org/\" target=\"_blank\">Childcare Network of Evanston</a> using Webflow. The project was carried out by a collaborative team of early-career technologists pivoting from other professional roles, working together to deliver a production-ready site for a community-serving organization."
+    },
+    {
+      "title": "Website launch: The AUX",
       "date": "7/1/2023",
-      "description": "Completed the design and development of a new website for <a href=\"https://theauxevanston.com/meet-our-tenants/\" target=\"_blank\">The AUX</a> through the YW Tech Lab, led by a studio-based student web development team."
+      "description": "Completed the design and development of a new website for The AUX through the YW Tech Lab (in partnership with the YWCA of Evanston/North Shore), led by a studio-based student web development team."
     },
     {
       "title": "NSF BRAID Grant Awarded",
