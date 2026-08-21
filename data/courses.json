@@ -77,6 +77,12 @@
             "title": "Software Engineering",
             "description": "An exploration of the processes and tools that work to create scalable and maintainable software. For CS majors and minors.",
             "sessions": {
+                "2026-2027": [
+                    {
+                        "period": "Fall",
+                        "url": "https://csci338.github.io/fall2026/"
+                    }
+                ],
                 "2025-2026": [
                     {
                         "period": "Fall",
@@ -190,6 +196,20 @@
                     {
                         "period": "Fall",
                         "url": "https://mser521.github.io/fall2025/"
+                    }
+                ]
+            }
+        },
+        {
+            "years": "2026 -",
+            "code": "SYS 478",
+            "title": "Senior Year Seminar",
+            "description": "“Thinking” Machines, Human Choices: Power & Responsibility in AI Design & Deployment",
+            "sessions": {
+                "2026-2027": [
+                    {
+                        "period": "Fall",
+                        "url": "https://sys478-ai.github.io/fall2026/"
                     }
                 ]
             }
