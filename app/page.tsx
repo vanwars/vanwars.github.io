@@ -1,15 +1,18 @@
 import News from "@/components/News";
 import Courses from "@/components/Courses";
+import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
 import { getCourses } from "@/lib/courses";
+import { getProjects } from "@/lib/projects";
 import { getPublications, PUBLICATION_GROUPINGS } from "@/lib/publications";
 
 export default function Home() {
   const coursesData = getCourses();
+  const projects = getProjects();
   const publications = getPublications();
   return (
     <>
-    <main className="pt-10 min-h-[65vh] max-w-[800px] max-md:mx-4 md:max-w-[1000px] md:grid md:items-start md:grid-cols-[260px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
+    <main className="pt-10 min-h-[65vh] max-w-[1200px] max-md:mx-4 md:max-w-[1200px] md:grid md:items-start md:grid-cols-[260px_auto] md:gap-[60px] md:ml-[5vw] md:mr-auto">
       <div className="hidden md:block">
         <News />
       </div>
@@ -36,6 +39,8 @@ export default function Home() {
         </p>
 
         <Courses coursesData={coursesData} />
+
+        <Projects projects={projects} />
 
         <Publications publications={publications} groupings={PUBLICATION_GROUPINGS} />
 

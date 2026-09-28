@@ -6,23 +6,29 @@
   --font-sans: "Open Sans", sans-serif;
   --font-cursive: "Sue Ellen Francisco", cursive;
   --heading-font: "Outfit", "Outfit Fallback", serif;
-  --color-orange: #fe6003;
+  
   --color-link-color: #205c76;
   --color-blue: #4f6d7a;
   --color-bluegreen: #315659;
-  --color-redpurple: #e91e63;
-  --color-redpurple-light: #f56d9b;
-  --color-redpurple-dark: #c01447;
   --color-redpurple-darkest: #960b30;
   --color-background: #FFFFF7;
   --color-border: #e8dab2;
   --color-eggplant: #754f5b;
+  --color-redpurple: #e91e63;
+  --color-redpurple-light: #f56d9b;
+  --color-redpurple-dark: #c01447;
+  --color-orange: #fe6003;
+  --color-dark-blue: #1b4079;
+  --color-turquoise: #17bebb;
+  --color-vanilla: #f2f3ae;
 }
+
+
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Offset in-page anchors (#teaching, #scholarship, #contact) below the sticky nav (55px) */
+    /* Offset in-page anchors (#teaching, #publications, #projects, #contact) below the sticky nav (55px) */
     /* scroll-padding-top: 3.5rem; */
   }
 
@@ -80,12 +86,40 @@
     font-family: var(--heading-font);
   }
 
+.heading2-expandable-turquoise {
+    @apply text-turquoise;
+  }
+
+.heading2-expandable-dark-blue {  
+    @apply text-dark-blue;
+  }
+
 .heading3 {
     @apply text-[1.1em] mb-1;
     font-family: var(--heading-font);
     line-height: 1.5rem;
 }
 
+.cool-text-blue {
+    color: var(--color-dark-blue);
+    text-shadow: 3px 3px 0px var(--color-turquoise);
+    letter-spacing: 3px;
+    font-size: 3.5rem !important;
+}
+
+.cool-text-turquoise {
+  color: var(--color-turquoise);
+  text-shadow: 3px 3px 0px var(--color-dark-blue);
+  letter-spacing: 3px;
+  font-size: 3.5rem !important;
+}
+
+.cool-text-pink {
+  color: var(--color-redpurple);
+  text-shadow: 3px 3px 0px var(--color-orange);
+  letter-spacing: 3px;
+  font-size: 2.5rem !important;
+}
 
 .pub-entry {
     @apply grid grid-cols-[40px_auto] gap-5 md:grid-cols-[40px_auto] mb-4;

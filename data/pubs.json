@@ -1,5 +1,6 @@
 [
     {
+        "id": "vanwart-sanft-2026-industry-team-project",
         "authors": "Van Wart, S.J. & Sanft, Kevin R.",
         "date": "Forthcoming",
         "year": "In press",
@@ -9,6 +10,7 @@
         "url": "/docs/CCSC_Final_VanWart_Sanft_ExperienceReport2026.pdf"
     },
     {
+        "id": "lanouette-vanwart-2026-schoolyards-and-data",
         "authors": "Lanouette, K., & Van Wart, S.J.",
         "date": "2026",
         "year": "2026",
@@ -22,6 +24,7 @@
         "url": "/docs/lanouette-vanwart-2026-science-and-children.pdf"
     },
     {
+        "id": "lanouette-vanwart-parikh-2025-jset",
         "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S.",
         "date": "2025",
         "year": "2025",
@@ -35,6 +38,7 @@
         "url": "/docs/jest-2024.pdf"
     },
     {
+        "id": "chavez-vanwart-2023-accessibility",
         "authors": "Chávez, V. & Van Wart, S.J.",
         "date": "2023, June 10-15",
         "year": "2023",
@@ -47,6 +51,7 @@
         "url": "/docs/ICLS2023_accessibility.pdf"
     },
     {
+        "id": "vanwart-lanouette-parikh-2020-scripts-and-counterscripts",
         "title": "Scripts and counterscripts in community-based data science: Participatory digital mapping and the pursuit of a third space",
         "authors": "Van Wart, S.J., Lanouette, K., Parikh, T.S.",
         "date": "2020",
@@ -60,6 +65,7 @@
         "url": "/docs/jls-2020.pdf"
     },
     {
+        "id": "lanouette-vanwart-2019-moving-between-experience-data",
         "title": "Moving Between Experience, Data and Explanation: The Role of Participatory GIS Maps in Elementary Science Sensemaking",
         "authors": "Lanouette, K., Van Wart, S.J.",
         "date": "2019",
@@ -72,6 +78,7 @@
         "location": "Lyon, FR"
     },
     {
+        "id": "lanouette-vanwart-parikh-2016-supporting-elementary-students",
         "title": "Supporting elementary students' learning about ecological systems through data modeling and interactive mapping in local contexts",
         "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S.",
         "date": "2016",
@@ -84,6 +91,7 @@
         "url": "/docs/ICLS2016.pdf"
     },
     {
+        "id": "vanwart-vakil-parikh-2014-apps-for-social-justice",
         "title": "Apps for social justice: Motivating computer science learning with design and real-world problem solving",
         "authors": "Van Wart, S.J., Vakil, S., & Parikh, T.S.",
         "date": "2014",
@@ -97,6 +105,7 @@
         "url": "/docs/iticse-2014-vanwart-et-al.pdf"
     },
     {
+        "id": "vanwart-tsai-parikh-2010-local-ground-toolkit",
         "title": "Local Ground: A Paper-Based Toolkit for Documenting Local Geo-spatial Knowledge",
         "authors": "Van Wart, S.J., Tsai, K.J., & Parikh, T.S.",
         "date": "2010",
@@ -110,6 +119,7 @@
         "url": "/docs/localground_dev10.pdf"
     },
     {
+        "id": "lanouette-vanwart-parikh-2024-aera-possibilities",
         "title": "Participatory Digital Mapping, Dynamic Data, and Children's Science Argumentation: Possibilities in Elementary Science Ecology Studies",
         "authors": "Lanouette, K., Van Wart, S.J., & Parikh, T.S",
         "date": "2024",
@@ -119,6 +129,7 @@
         "location": "Philadelphia, PA"
     },
     {
+        "id": "vanwart-vakil-araujomelo-2023-ai-literacy-politics",
         "title": "Developing Artificial Intelligence Literacy by Examining the Politics of Internet Platforms",
         "chairs": "Zheng et al. (chairs)",
         "symposium_title": "Artificial Intelligence in Education: Potentials and Challenges in Ethics, Data Privacy, and Pedagogy",
@@ -130,6 +141,7 @@
         "location": "Chicago, IL"
     },
     {
+        "id": "araujomelo-reith-nober-vanwart-vakil-2022-google-got-yo-life",
         "title": "“Google got yo' life”: Opening Portals for Ethical Sensemaking with Relational Design",
         "authors": "araujo melo, n., Reith, A., Nober, B., Van Wart, S.J., & Vakil, S.",
         "date": "2022",
@@ -139,6 +151,7 @@
         "location": "San Diego, CA"
     },
     {
+        "id": "cls-2021-bringing-politics-and-power",
         "title": "Bringing Politics and Power into Computing Education: Young People’s Race, Power, and Technology Project",
         "authors": "(in alphabetical order) araujo melo, n., Bhadriraju, S., Elliot, S., Logan, C., Mehta, B., Reith, A., Vakil, S., Van Wart, S., Voelkel, G., Watson Jr., C., Wetoska, N., & Williams, T.",
         "date": "7-30 July 2021",
@@ -148,6 +161,7 @@
         "location": "Online"
     },
     {
+        "id": "irgens-et-al-2020-data-literacies-and-social-justice",
         "title": "Data Literacies and Social Justice: Exploring Critical Data Literacies through Sociocultural Perspectives",
         "authors": "Irgens, G. A., Simon, K., Wise, A., Philip, T., Olivares, M. C., Van Wart, S.J., …  & Kahn, J.",
         "date": "21-23 July, 2020",
@@ -159,6 +173,7 @@
         "url": "https://repository.isls.org/handle/1/6665"
     },
     {
+        "id": "matuk-et-al-2020-data-literacy-for-social-justice",
         "title": "Data Literacy for Social Justice",
         "authors": "Matuk, C., Yoon, S., Polman, J., Barton, J., Bulalacao, N. M., Cafaro, F.,  & … Woods, P.",
         "date": "21-23 July, 2020",
@@ -170,6 +185,7 @@
         "url": "https://repository.isls.org//handle/1/6656"
     },
     {
+        "id": "vanwart-lanouette-parikh-2016-local-ground-aera",
         "title": "Local Ground: Supporting local, data-driven inquiry with youth",
         "authors": "Van Wart, S.J., Lanouette, K., & Parikh, T.S.",
         "date": "2016",
@@ -179,6 +195,7 @@
         "location": " Washington, D.C."
     },
     {
+        "id": "vanwart-2015-cs-meets-social-studies",
         "title": "Computer science meets social studies: Embedding CS in the study of locally grounded civic issues",
         "authors": "Van Wart, S.J.",
         "date": "2015",
@@ -190,6 +207,7 @@
         "doi": "https://dl.acm.org/doi/10.1145/2787622.2787751"
     },
     {
+        "id": "vanwart-parikh-2014-local-ground-toolkit-icls",
         "title": "Local Ground: A Toolkit Supporting Metarepresentational Competence in Data Science.",
         "authors": "Van Wart, S.J. & Parikh, T.S.",
         "date": "2014",
@@ -200,6 +218,7 @@
         "pages": "1589-1590"
     },
     {
+        "id": "vanwart-parikh-2013-youth-community-agency-gis",
         "title": "Increasing Youth and Community Agency in GIS",
         "authors": "Van Wart, S.J. & Parikh, T.S.",
         "date": "2013",
@@ -211,6 +230,7 @@
         "url": "https://brenthecht.com/publications/bhecht_chi2013ea_geohci2013.pdf"
     },
     {
+        "id": "soep-lee-vanwart-parikh-2020-code-for-what",
         "authors": "Soep, E., Lee, C., Van Wart, S.J., Parikh, T.S.",
         "title": "Code for What?",
         "editors": "Jenkins, H., Peters-Lazaro, G., & Shresthova S.",
@@ -223,6 +243,7 @@
         "url": "https://nyupress.org/9781479869503/popular-culture-and-the-civic-imagination/"
     },
     {
+        "id": "koy-vanwart-2011-cal-adapt",
         "title": "Cal-Adapt: Bringing global climate change data to a local application",
         "authors": "Koy, K., Van Wart, S.J., Galey, B., O'Connor, M., & Kelly, M.",
         "date": "March 2011",
@@ -234,6 +255,7 @@
         "pages": "546-550"
     },
     {
+        "id": "vanwart-2019-fair-explanation-dissertation",
         "title": "In search of a \"fair explanation\": Helping young people to consider the possibilities, limitations, and risks of computer- and data-mediated systems",
         "authors": "Van Wart, S.J.",
         "date": "2019",

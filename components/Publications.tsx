@@ -19,7 +19,7 @@ export default function Publications({ publications, groupings }: PublicationsPr
         collapseAll,
       } = useExpandedSet();
       const [isExpandedAll, isSetExpandedAll] = useState(false);
-      const pubTitle = 'Scholarship';
+      const pubTitle = 'Publications';
     
       const handleToggle = () => {
         const newIsExpandedAll = !isExpandedAll;
@@ -31,7 +31,7 @@ export default function Publications({ publications, groupings }: PublicationsPr
         }
       };
   return (
-    <div className="pt-[60px]" id="scholarship">
+    <div className="pt-[60px]" id="publications">
         <ExpandableSectionHeading
                     title={pubTitle}
                     isExpanded={isExpandedAll}
@@ -58,7 +58,7 @@ export default function Publications({ publications, groupings }: PublicationsPr
             />
             <ul className="m-0 p-0 mb-10">
               {pubs.map((pub) => (
-                <li key={`${pub.year}-${pub.title}`} className="list-none">
+                <li key={pub.id} className="list-none">
                   <PublicationEntry
                     citation={{...pub}}
                     groupExpanded={isGroupExpanded}

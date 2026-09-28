@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 const NAV_LINKS = [
   { href: '/#teaching', label: 'Teaching' },
-  { href: '/#scholarship', label: 'Scholarship' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#publications', label: 'Publications' },
   { href: '/#contact', label: 'Contact' },
 ] as const;
 

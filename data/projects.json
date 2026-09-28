@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ywca-tapestri-tech",
+    "title": "YW Tech Lab & the Tapestri Tech Collective",
+    "years": "2021 - present",
+    "description": "In partnership with the YWCA Evanston / North Shore and more recently with the Tapestri Tech Collective, I help develop and support community-based approaches to technology education and through hands-on learning, mentorship, and real-world client projects. Participants build technical skills, professional experience, and confidence through collaborative software and web development work.",
+    "video": "https://player.vimeo.com/video/885769209?badge=0&autopause=0&player_id=0&app_id=58479",
+    "funding": [],
+    "papers": [],
+    "newsLabel": "Articles about the Program",
+    "news": [
+      { "title": "YWCA Evanston/North Shore Launches Women in Tech Council", "date": "February 10, 2021", "source": "Evanston RoundTable", "url": "https://evanstonroundtable.com/2021/02/10/ywca-evanston-north-shore-launches-women-in-tech-council/" },
+      { "title": "Supporting Efforts Towards More Equitable Communities", "date": "August 16, 2022", "source": "Northwestern Engineering News", "url": "https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2022/supporting-efforts-towards-more-equitable-communities.html" },
+      { "title": "Building a More Inclusive Tech Ecosystem", "date": "March 16, 2023", "source": "Northwestern Engineering News", "url": "https://www.mccormick.northwestern.edu/news/articles/2023/03/building-a-more-inclusive-tech-ecosystem/" },
+      { "title": "Northwestern CS, YWCA Advance 'Tech Lab' Initiative", "date": "February 8, 2024", "source": "Northwestern Engineering News", "url": "https://www.mccormick.northwestern.edu/news/articles/2024/02/northwestern-cs-ywca-advance-tech-lab-initiative/" }
+   ],
+    "partners": [
+      { "label": "YWCA Evanston/North Shore", "url": "https://www.ywca-ens.org/" },
+      { "label": "Oakton College", "url": "https://www.oakton.edu/" },
+      { "label": "Northwestern University", "url": "https://www.mccormick.northwestern.edu/computer-science/"}
+    ],
+    "projectsLabel": "Web Applications for Non-Profit Clients",
+    "projects": [
+      { "label": "The AUX" },
+      { "label": "Embrace Your Crown" },
+      { "label": "Childcare Network of Evanston" }
+    ]
+  },
+  {
+    "id": "nc-innovation",
+    "title": "Engaging Undergraduates in Applied Software Engineering & Product Innovation",
+    "years": "2025 - present",
+    "description": "This work explores how real-world software engineering projects can be integrated into undergraduate computer science education. In collaboration with my colleague Kevin Sanft and external partners, students contribute to the design and development of production software while gaining experience with collaborative development, project management, and client-centered problem solving.",
+    "funding": [
+      { "label": "NC Innovation", "url": "https://ncinnovation.org/" }
+    ],
+    "papers": [],
+    "news": [],
+    "partners": [],
+    "projects": [
+      { "label": "3 Moves Ahead" }
+    ]
+  },
+  {
+    "id": "braid",
+    "title": "Building Capacity to Anticipate Broader Impacts in Emerging AI Systems",
+    "years": "2023 - present",
+    "description": "In this project, I work with undergraduate students to develop educational resources and communication approaches that help lay audiences understand the goals and implications of emerging AI research. An NSF-funded project on new, brain-inspired, energy-efficient hardware creates an opportunity to develop and test these approaches in the context of an active research program.",
+    "funding": [],
+    "papers": [],
+    "news": [],
+    "partners": [],
+    "projects": [
+      { "label": "Summer Research Fellowships for undergraduates" },
+      { "label": "Science communication workshops" }
+    ]
+  }
+]

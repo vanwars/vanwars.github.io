@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 export interface Publication {
+  id: string;
   authors?: string;
   date: string;
   year: string;
